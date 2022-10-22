@@ -1,34 +1,44 @@
 @font-face {
-  font-family: Roboto;
-  src: url("./fonts/roboto/Roboto-Regular.ttf");
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/roboto/Roboto-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: RobotoBold;
-  src: url("./fonts/roboto/Roboto-Medium.ttf");
-}
-
-.advantages-page {
-  padding: 120px 181px 122px 181px;
-}
-
-.header-text {
-  font-family: RobotoBold;
+  font-family: "Roboto Medium", sans-serif;
+  font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
+  src: url("./fonts/roboto/Roboto-Medium.woff2") format("woff2");
+}
+
+* {
+  font-family: "Roboto", sans-serif;
   color: #383838;
   text-align: center;
+  line-height: 100%;
 }
 
-.highlight-stroke {
+.advantages-section {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.title {
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 40px;
+}
+
+.highlight-stroke:after {
+  content: "";
   background-color: #f5bd41;
   width: 100px;
   height: 4px;
+  display: block;
   margin: 20px auto 88px;
 }
 
-.container {
+.offers-list {
   display: flex;
   justify-content: space-between;
 }
@@ -41,12 +51,7 @@
 }
 
 .text {
-  font-family: Roboto;
-  font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
-  color: #383838;
-  text-align: center;
   display: inline-block;
   margin-top: 48px;
 }
