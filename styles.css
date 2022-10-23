@@ -17,16 +17,21 @@
   color: #383838;
   text-align: center;
   line-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-section {
-  max-width: 1440px;
-  margin: auto;
+  height: 569px;
+  padding-top: 120px;
+  box-sizing: border-box;
 }
 
 .title {
   font-family: "Roboto Medium", sans-serif;
   font-size: 40px;
+  height: 47px;
+  margin-bottom: 110px;
 }
 
 .highlight-stroke:after {
@@ -38,20 +43,58 @@
   margin: 20px auto 88px;
 }
 
-.offers-list {
+.advantages-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.advantages {
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.list-item {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-right: 16px;
+  width: 296px;
+}
+
+.list-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 16px;
 }
 
 .text {
   font-size: 24px;
   display: inline-block;
   margin-top: 48px;
+}
+
+.guests-loves-section {
+  background-color: #eaf0f9;
+  height: 828px;
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+
+.text.blue-text {
+  color: #3077c6;
+}
+
+.text.grey-text {
+  color: #bfbfbf;
+}
+
+.left-align-text {
+  width: 295px;
+  text-align: left;
+  margin-top: 24px;
 }
