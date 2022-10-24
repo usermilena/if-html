@@ -1,16 +1,4 @@
-@font-face {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/roboto/Roboto-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Roboto Medium", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  src: url("./fonts/roboto/Roboto-Medium.woff2") format("woff2");
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 * {
   font-family: "Roboto", sans-serif;
@@ -28,7 +16,7 @@
 }
 
 .title {
-  font-family: "Roboto Medium", sans-serif;
+  font-weight: 500;
   font-size: 40px;
   height: 47px;
   margin-bottom: 110px;
@@ -59,7 +47,7 @@
 }
 
 .text {
+  font-weight: 400;
   font-size: 24px;
-  display: inline-block;
   margin-top: 48px;
 }
