@@ -1,0 +1,146 @@
+@import url("./fonts.css");
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: #383838;
+  text-align: center;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-section {
+  height: 569px;
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  height: 47px;
+}
+
+.highlight-stroke:after {
+  content: "";
+  background-color: #f5bd41;
+  width: 100px;
+  height: 4px;
+  display: block;
+  margin: 20px auto 80px;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 16px;
+  width: 296px;
+}
+
+.advantages-item {
+  margin-top: 112px;
+  margin-bottom: 48px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.guests-loves-section {
+  background-color: #eaf0f9;
+  height: 828px;
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 105px;
+}
+
+.list-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+.text.blue-text {
+  color: #3077c6;
+}
+
+.left-align-text {
+  width: 295px;
+  text-align: left;
+  margin-top: 28px;
+}
+
+.text.grey-text {
+  color: #bfbfbf;
+}
+
+.footer {
+  background-color: #10367c;
+  height: 625px;
+  padding: 120px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 193px;
+  height: 211px;
+  margin-right: 223px;
+}
+
+.list-about {
+  height: 23px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: start;
+  margin-bottom: 24px;
+}
+
+.list-about.title {
+  font-weight: 500;
+}
+
+.property-types {
+  display: flex;
+  flex-direction: column;
+  width: 133px;
+  height: 305px;
+  margin-right: 283px;
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+  width: 232px;
+  height: 117px;
+}
+
+.rights {
+  font-size: 14px;
+  color: #ffffff;
+  height: 16px;
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+}
