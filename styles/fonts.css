@@ -69,7 +69,7 @@
 /* cyrillic-ext */
 @font-face {
   font-family: "Roboto";local("Roboto Medium"), local("Roboto-Medium"),
-font-style: normal;
+  font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: local("Roboto Medium"), local("Roboto-Medium"), url(../fonts/roboto-medium-cyrillic-ext.woff2) format("woff2");
