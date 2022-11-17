@@ -142,32 +142,34 @@
           Discover stays <br />
           to live, work or just relax
         </h1>
-        <div class="top__search--caption">
-          <p class="top__search--caption__destination">
-            Your destination or hotel name
-          </p>
-          <p class="top__search--caption__date">Check-in — Check-out</p>
+        <div class="top__search--label">
+          <label for="destination" class="top__search--label__destination"
+            >Your destination or hotel name</label
+          >
+          <label for="date" class="top__search--label__date"
+            >Check-in — Check-out</label
+          >
+          <div></div>
+          <div></div>
         </div>
         <form class="top__search">
+          <!--          <div>-->
           <input
+            id="destination"
             class="top__search--destination"
-            type="text"
             placeholder="New York"
           />
-          <div class="top__search--date">
-            <input type="text" value="Tue 15 Sept" />
-            <input type="text" value="Sat 19 Sept" />
-          </div>
-          <div class="top__search--amount">
-            <input type="number" placeholder="2 Adults" />
-            <input type="number" placeholder="0 Children" />
-            <input type="number" placeholder="1 Room" />
-          </div>
+          <input
+            id="date"
+            class="top__search--date"
+            value="Tue 15 Sept — Sat 19 Sept"
+          />
+          <!--          </div>-->
+          <input
+            class="top__search--amount"
+            value="2 Adults — 0 Children — 1 Room"
+          />
           <button class="top__search--button" type="submit">Search</button>
-          <!--          <div class="top__search&#45;&#45;destination">New York</div>-->
-          <!--          <div class="top__search&#45;&#45;date">Tue 15 Sept — Sat 19 Sept</div>-->
-          <!--          <div class="top__search&#45;&#45;amount">2 Adults — 0 Children — 1 Room</div>-->
-          <!--          <div class="top__search&#45;&#45;button">Search</div>-->
         </form>
         <div class="top__footer">
           <svg class="top__footer--google-play">
