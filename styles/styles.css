@@ -93,24 +93,8 @@
   width: 542px;
   text-align: left;
   color: #fff;
-  margin: 202px 0 100px;
-}
-
-.top__search--label {
-  display: flex;
-  font-size: 18px;
-  margin-bottom: 24px;
-}
-
-.top__search--label__destination {
-  color: #fff;
-  text-align: left;
-  padding-left: 24px;
-}
-
-.top__search--label__date {
-  color: #fff;
-  min-width: 260px;
+  margin: 205px 0 145px;
+  line-height: 1.18em;
 }
 
 .top__search {
@@ -122,6 +106,14 @@
   height: 64px;
   font-size: 18px;
   align-items: center;
+  position: relative;
+}
+
+.top__search--label__destination {
+  color: #fff;
+  padding-left: 24px;
+  position: absolute;
+  top: -50px;
 }
 
 .top__search--destination {
@@ -135,14 +127,18 @@
   color: #383838;
 }
 
+.top__search--label__date {
+  color: #fff;
+  position: absolute;
+  top: -50px;
+  left: 490px;
+}
+
 .top__search--date {
   border: 3px solid #f5bd41;
   border-radius: 8px;
   min-width: 260px;
   height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   outline: none;
 }
 
