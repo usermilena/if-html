@@ -89,14 +89,13 @@
   height: 0;
 }
 
-/* For desktop: */
+/* For desktops: */
 
 /*TOP-SECTION*/
 
 .top {
   background-image: url("../images/images/top-section.png");
   background-position: top;
-  min-height: 100vh;
   padding: 51px 104px 120px;
 }
 
@@ -177,37 +176,48 @@
   position: relative;
 }
 
+.top__search--wrapper__destination {
+  position: relative;
+  width: 38%;
+}
+
 .top__search--label__destination {
   color: var(--general-white);
   padding-left: 24px;
   position: absolute;
-  top: -50px;
+  top: -46px;
 }
 
 .top__search--destination {
   text-align: left;
   padding-left: 24px;
-  width: 38%;
   outline: none;
+  height: 64px;
+  width: 100%;
 }
 
 ::placeholder {
   color: var(--text-color);
 }
 
+.top__search--wrapper__date {
+  position: relative;
+  width: 21%;
+}
+
 .top__search--label__date {
   color: var(--general-white);
+  padding-left: 24px;
   position: absolute;
-  top: -50px;
-  left: 490px;
+  top: -46px;
 }
 
 .top__search--date {
   border: 3px solid var(--accent-yellow);
   border-radius: 8px;
-  width: 21%;
   height: 64px;
   outline: none;
+  width: 100%;
 }
 
 .top__search--amount {
@@ -221,7 +231,8 @@
   color: var(--general-white);
   background-color: var(--accent-blue);
   border-radius: 8px;
-  padding: 20px 57px;
+  padding: 20px 0;
+  margin: 0 auto;
   width: 16%;
 }
 
@@ -421,6 +432,16 @@
     font-size: 15px;
   }
 
+  /*HOMES*/
+
+  .homes__item.col-3 {
+    width: 35%;
+  }
+
+  .homes__item--hidden {
+    display: none;
+  }
+
   /*FOOTER*/
 
   .footer {
@@ -450,6 +471,59 @@
 
   .footer__rights {
     font-size: 12px;
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* For laptops: */
+  [class*="col-"] {
+    width: 35%;
+  }
+
+  /*ADVANTAGES*/
+
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .advantages__list {
+    gap: 0;
+  }
+
+  .advantages__item--svg {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  /*HOMES*/
+
+  .homes__item--hidden {
+    display: none;
+  }
+
+  /*FOOTER*/
+
+  .footer {
+    padding: 80px 0 50px;
+  }
+
+  .footer__container {
+    align-items: center;
+  }
+
+  .footer__menu {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .footer__column {
+    width: 40%;
+    gap: 16px;
+  }
+
+  .footer__column:last-child {
     margin-top: 32px;
   }
 }
