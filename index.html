@@ -142,62 +142,65 @@
           Discover stays <br />
           to live, work or just relax
         </h1>
-        </div>
-        <form class="top__search">
+      </div>
+      <form class="top__search">
+        <div class="top__search--wrapper__destination">
           <label for="destination" class="top__search--label__destination"
-          >Your destination or hotel name</label
+            >Your destination or hotel name</label
           >
           <input
             id="destination"
             class="top__search--destination"
             placeholder="New York"
           />
+        </div>
+        <div class="top__search--wrapper__date">
           <label for="date" class="top__search--label__date"
-          >Check-in — Check-out</label
+            >Check-in — Check-out</label
           >
           <input
             id="date"
             class="top__search--date"
-            value="Tue 15 Sept — Sat 19 Sept"
+            placeholder="Tue 15 Sept — Sat 19 Sept"
           />
-          <input
-            class="top__search--amount"
-            value="2 Adults — 0 Children — 1 Room"
-          />
-          <button class="top__search--button" type="submit">Search</button>
-        </form>
-        <div class="top__footer">
-          <svg class="top__footer--google-play">
-            <use href="#google-play" />
-          </svg>
-          <svg class="top__footer--app-store">
-            <use href="./images/sprite.svg#app-store" />
-          </svg>
         </div>
+        <input
+          class="top__search--amount"
+          placeholder="2 Adults — 0 Children — 1 Room"
+        />
+        <button class="top__search--button" type="submit">Search</button>
+      </form>
+      <div class="top__footer">
+        <svg class="top__footer--google-play">
+          <use href="#google-play" />
+        </svg>
+        <svg class="top__footer--app-store">
+          <use href="./images/sprite.svg#app-store" />
+        </svg>
       </div>
     </div>
     <div class="advantages">
       <h2 class="advantages__title">What do we offer</h2>
       <div class="advantages__list">
-        <div class="advantages__item">
+        <div class="advantages__item col-3">
           <svg class="advantages__item--svg">
             <use href="./images/sprite.svg#headset" />
           </svg>
           <span class="advantages__item--caption">Support 24/7</span>
         </div>
-        <div class="advantages__item">
+        <div class="advantages__item col-3">
           <svg class="advantages__item--svg">
             <use href="./images/sprite.svg#forum" />
           </svg>
           <span class="advantages__item--caption">Communicate directly</span>
         </div>
-        <div class="advantages__item">
+        <div class="advantages__item col-3">
           <svg class="advantages__item--svg">
             <use href="./images/sprite.svg#devices" />
           </svg>
           <span class="advantages__item--caption">Book online</span>
         </div>
-        <div class="advantages__item">
+        <div class="advantages__item col-3">
           <svg class="advantages__item--svg">
             <use href="./images/sprite.svg#like" />
           </svg>
@@ -208,15 +211,20 @@
     <div class="homes">
       <h2 class="homes__title">Homes guests loves</h2>
       <div class="homes__list">
-        <div class="homes__item">
-          <img src="images/images/hotel-leopold.png" alt="Hotel Leopold" />
+        <div class="homes__item col-3">
+          <img
+            class="homes__item--img"
+            src="images/images/hotel-leopold.png"
+            alt="Hotel Leopold"
+          />
           <span class="homes__hotel">Hotel Leopold</span>
           <span class="homes__hotel homes__hotel--location">
             Saint Petersburg, Russia
           </span>
         </div>
-        <div class="homes__item">
+        <div class="homes__item col-3">
           <img
+            class="homes__item--img"
             src="images/images/apartment-sunshine.png"
             alt="Apartment Sunshine"
           />
@@ -225,15 +233,20 @@
             Santa Cruz de Tenerife, Spain
           </span>
         </div>
-        <div class="homes__item">
-          <img src="images/images/villa-kunerad.png" alt="Villa Kunerad" />
+        <div class="homes__item homes__item--hidden col-3">
+          <img
+            class="homes__item--img"
+            src="images/images/villa-kunerad.png"
+            alt="Villa Kunerad"
+          />
           <span class="homes__hotel">Villa Kunerad</span>
           <span class="homes__hotel homes__hotel--location">
             Vysokie Tatry, Slowakia
           </span>
         </div>
-        <div class="homes__item homes__item--last">
+        <div class="homes__item homes__item--hidden col-3">
           <img
+            class="homes__item--img"
             src="images/images/hostel-friendship.png"
             alt="Hostel Friendship"
           />
@@ -245,32 +258,35 @@
       </div>
     </div>
     <div class="footer">
+      <svg class="footer__logo">
+        <use href="./images/sprite.svg#logo" />
+      </svg>
       <div class="footer__container">
         <div class="footer__menu">
-          <div class="footer__column footer__column--about">
-            <span class="footer__item footer__title">About</span>
-            <span class="footer__item">How Triphouse works</span>
-            <span class="footer__item">Careers</span>
-            <span class="footer__item">Privacy</span>
-            <span class="footer__item footer__item--last">Terms</span>
-          </div>
-          <div class="footer__column footer__column--property">
-            <span class="footer__item footer__title">Property types</span>
-            <span class="footer__item">Guest houses</span>
-            <span class="footer__item">Hotels</span>
-            <span class="footer__item">Apartments</span>
-            <span class="footer__item">Villas</span>
-            <span class="footer__item">Holiday homes</span>
-            <span class="footer__item footer__item--last">Hostels</span>
+          <div class="footer__column">
+            <a class="footer__title">About</a>
+            <a class="footer__item">How Triphouse works</a>
+            <a class="footer__item">Careers</a>
+            <a class="footer__item">Privacy</a>
+            <a class="footer__item">Terms</a>
           </div>
           <div class="footer__column">
-            <span class="footer__item footer__title">Support</span>
-            <span class="footer__item">Contact Customer Service</span>
-            <span class="footer__item footer__item--last">FAQ</span>
+            <a class="footer__title">Property types</a>
+            <a class="footer__item">Guest houses</a>
+            <a class="footer__item">Hotels</a>
+            <a class="footer__item">Apartments</a>
+            <a class="footer__item">Villas</a>
+            <a class="footer__item">Holiday homes</a>
+            <a class="footer__item">Hostels</a>
+          </div>
+          <div class="footer__column">
+            <a class="footer__title">Support</a>
+            <a class="footer__item">Contact Customer Service</a>
+            <a class="footer__item">FAQ</a>
           </div>
         </div>
         <span class="footer__rights"
-          >&copy; 2022Triphouse, Inc. All rights reserved</span
+          >&copy; 2022 Triphouse, Inc. All rights reserved</span
         >
       </div>
     </div>
