@@ -1,107 +1,111 @@
+/*THE BEST DESTINATIONS*/
+
 #maldives {
-  background-image: url("../images/images/maldives.png");
+  background-image: url("../images/images/destinations/maldives.png");
 }
 
 #spain {
-  background-image: url("../images/images/spain.png");
+  background-image: url("../images/images/destinations/spain.png");
 }
 
 #norway {
-  background-image: url("../images/images/norway.png");
+  background-image: url("../images/images/destinations/norway.png");
 }
 
 #island {
-  background-image: url("../images/images/island.png");
+  background-image: url("../images/images/destinations/island.png");
 }
 
 #japan {
-  background-image: url("../images/images/japan.png");
+  background-image: url("../images/images/destinations/japan.png");
 }
 
 #france {
-  background-image: url("../images/images/france.png");
+  background-image: url("../images/images/destinations/france.png");
 }
 
 #scottland {
-  background-image: url("../images/images/scottland.png");
+  background-image: url("../images/images/destinations/scottland.png");
 }
 
 #russia {
-  background-image: url("../images/images/russia.png");
+  background-image: url("../images/images/destinations/russia.png");
 }
 
 #berlin {
-  background-image: url("../images/images/berlin-germany.png");
+  background-image: url("../images/images/destinations/berlin-germany.png");
 }
 
 #paris {
-  background-image: url("../images/images/paris-france.png");
+  background-image: url("../images/images/destinations/paris-france.png");
 }
 
 #budapest {
-  background-image: url("../images/images/budapest-hungary.png");
+  background-image: url("../images/images/destinations/budapest-hungary.png");
 }
 
 #london {
-  background-image: url("../images/images/london-united-kingdom.png");
+  background-image: url("../images/images/destinations/london-united-kingdom.png");
 }
 
 #barcelona {
-  background-image: url("../images/images/barcelona-spain.png");
+  background-image: url("../images/images/destinations/barcelona-spain.png");
 }
 
 #tbilisi {
-  background-image: url("../images/images/tbilisi-georgia.png");
+  background-image: url("../images/images/destinations/tbilisi-georgia.png");
 }
 
 #moscow {
-  background-image: url("../images/images/moscow-russia.png");
+  background-image: url("../images/images/destinations/moscow-russia.png");
 }
 
 #amsterdam {
-  background-image: url("../images/images/amsterdam-netherlands.png");
+  background-image: url("../images/images/destinations/amsterdam-netherlands.png");
 }
 
 #edinburgh {
-  background-image: url("../images/images/edinburgh-castle-edinburg-united-kingdom.hpng.png");
+  background-image: url("../images/images/destinations/edinburgh-castle-edinburg-united-kingdom.hpng.png");
 }
 
 #neuschwanstein {
-  background-image: url("../images/images/neuschwanstein-fussen-germany.png");
+  background-image: url("../images/images/destinations/neuschwanstein-fussen-germany.png");
 }
 
 #big-ben {
-  background-image: url("../images/images/big-ben-london-united-kingdom.png");
+  background-image: url("../images/images/destinations/big-ben-london-united-kingdom.png");
 }
 
 #colosseum {
-  background-image: url("../images/images/colosseum-roma-italy.png");
+  background-image: url("../images/images/destinations/colosseum-roma-italy.png");
 }
 
 #matterhorn-zermatt {
-  background-image: url("../images/images/matterhorn-zermatt-switzerland.png");
+  background-image: url("../images/images/destinations/matterhorn-zermatt-switzerland.png");
 }
 
 #morskie-oko {
-  background-image: url("../images/images/morskie-oko-poland.png");
+  background-image: url("../images/images/destinations/morskie-oko-poland.png");
 }
 
 #krka {
-  background-image: url("../images/images/krka-croatia.png");
+  background-image: url("../images/images/destinations/krka-croatia.png");
 }
 
 #cabo-da-roca-sintra {
-  background-image: url("../images/images/cabo-da-roca-sintra-portugal.png");
+  background-image: url("../images/images/destinations/cabo-da-roca-sintra-portugal.png");
 }
 
+/*GUESTS REVIEWS*/
+
 #ubud-bali-resort-spa {
-  background-image: url("../images/images/ubud-bali-resort-spa.png");
+  background-image: url("../images/images/reviews/ubud-bali-resort-spa.png");
 }
 
 #king-kong-hostel {
-  background-image: url("../images/images/king-kong-hostel.png");
+  background-image: url("../images/images/reviews/king-kong-hostel.png");
 }
 
 #rokoko-hotel {
-  background-image: url("../images/images/rokoko-hotel.png");
+  background-image: url("../images/images/reviews/rokoko-hotel.png");
 }

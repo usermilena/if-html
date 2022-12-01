@@ -1,0 +1,589 @@
+/*TOP-SECTION FOR DESKTOPS*/
+
+.top {
+  background-image: url("../images/images/top-section.png");
+  background-position: top;
+  padding: 51px 0 120px;
+  background-repeat: no-repeat;
+}
+
+.top__header {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.top__header--logo {
+  fill: var(--accent-blue);
+  width: 205px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.top__header--menu__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.top__header--menu {
+  display: contents;
+}
+
+.top__header--stays {
+  font-size: 24px;
+  color: var(--general-white);
+  position: relative;
+  cursor: pointer;
+}
+
+.top__header--stays:hover:after {
+  content: "";
+  background-color: var(--accent-yellow);
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  bottom: -12px;
+  left: calc(50% - 50px / 2);
+  animation: jello-horizontal 0.5s linear both 0.5s;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.top__header--attractions {
+  font-size: 24px;
+  color: var(--general-white);
+  margin-left: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.top__header--attractions:hover:after {
+  content: "";
+  background-color: var(--accent-yellow);
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  bottom: -12px;
+  left: calc(50% - 50px / 2);
+  animation: jello-horizontal 0.5s linear both 0.5s;
+}
+
+.top__header--mode__icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 48px;
+  cursor: pointer;
+}
+
+.top__header--account__icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+.top__header--menu__icon {
+  display: none;
+}
+
+.top__main--container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.top__title {
+  font-size: 50px;
+  font-weight: 500;
+  color: var(--general-white);
+  margin: 205px 0 145px;
+  line-height: 1.18em;
+  cursor: default;
+}
+
+.top__search {
+  display: flex;
+  background-color: var(--general-white);
+  border: 3px solid var(--stroke-color);
+  border-right: none;
+  border-radius: 8px;
+  height: 64px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.top__search--destination__wrapper {
+  position: relative;
+  width: 38%;
+}
+
+.top__search--destination__search-icon {
+  display: none;
+}
+
+.top__search--destination__label {
+  color: var(--general-white);
+  padding: 0 24px;
+  position: absolute;
+  top: -66px;
+}
+
+.top__search--destination {
+  padding-left: 24px;
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.top__search ::placeholder {
+  color: var(--text-color);
+}
+
+.top__search--date__wrapper {
+  position: relative;
+  width: 21%;
+  border: 3px solid var(--accent-yellow);
+  border-radius: 8px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.top__search--date__label--desktop {
+  color: var(--general-white);
+  padding: 0 24px;
+  position: absolute;
+  top: -46px;
+}
+
+.top__search--date__label {
+  display: none;
+}
+
+.top__search--date__input {
+  outline: none;
+  width: 100%;
+  text-align: center;
+}
+
+.top__search--amount__wrapper {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top__search--amount {
+  display: flex;
+  align-items: center;
+}
+
+.top__search--amount--input {
+  outline: none;
+  width: 100%;
+  text-align: center;
+}
+
+.top__search--button {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--general-white);
+  background-color: var(--accent-blue);
+  border-radius: 8px;
+  padding: 18px 0;
+  margin: 0 auto;
+  width: 16%;
+  cursor: pointer;
+}
+
+.top__apps {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.top__apps--google-play {
+  width: 135px;
+  height: 40px;
+  margin-right: 17px;
+  cursor: pointer;
+}
+
+.top__apps--app-store {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /*TOP-SECTION FOR MOBILES*/
+
+  .top {
+    background-position: right;
+    padding: 12px 16px 40px;
+  }
+
+  .top__header--logo {
+    width: 122px;
+    height: 24px;
+  }
+
+  .top__header--stays {
+    display: none;
+  }
+
+  .top__header--attractions {
+    display: none;
+  }
+
+  .top__header--mode__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .top__header--account__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+  }
+
+  .top__header--menu__icon {
+    display: flex;
+    width: 24px;
+    height: 16px;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+
+  .top__title {
+    font-size: 30px;
+    margin: 52px 0 31px;
+  }
+
+  .top__search {
+    background-color: var(--accent-yellow);
+    border: none;
+    border-radius: 0;
+    height: auto;
+    font-size: 15px;
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .top__search--destination__wrapper {
+    background-color: var(--general-white);
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 15px 0 15px;
+  }
+
+  .top__search--destination__search-icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin-left: 12px;
+  }
+
+  .top__search--destination__label {
+    color: var(--text-color);
+    padding: 0 0 0 8px;
+    position: static;
+    font-weight: 500;
+  }
+
+  .top__search--destination {
+    display: none;
+  }
+
+  .top__search--date__wrapper {
+    position: relative;
+    border: none;
+    border-radius: 0;
+    flex: 1;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .top__search--date__label--desktop {
+    display: none;
+  }
+
+  .top__search--date__label {
+    display: flex;
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  .top__search--date {
+    flex: 1;
+    background-color: var(--general-white);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px 0 6px 8px;
+  }
+
+  .top__search--date:last-child {
+    margin-left: 8px;
+  }
+
+  .top__search--date__wrapper span {
+    display: none;
+  }
+
+  .top__search--date__input {
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .top__search--amount__wrapper {
+    width: 100%;
+    flex: 1;
+    position: static;
+    background-color: var(--general-white);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 6px 0 6px;
+  }
+
+  .top__search--amount {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    border-right: 1px solid var(--secondary-text);
+    padding-left: 8px;
+  }
+
+  .top__search--amount:last-child {
+    border-right: none;
+  }
+
+  .top__search--amount__wrapper span {
+    display: none;
+  }
+
+  .top__search--amount--input {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .top__search--amount__label {
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  .top__search--button {
+    font-size: 19px;
+    border-radius: 4px;
+    padding: 14px 0;
+    width: 100%;
+    flex: 1;
+  }
+
+  .top__apps {
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*TOP-SECTION FOR TABLETS*/
+
+  .top {
+    background-position: right;
+    padding: 12px 16px 40px;
+  }
+
+  .top__header--logo {
+    width: 188px;
+    height: 63px;
+  }
+
+  .top__header--stays {
+    display: none;
+  }
+
+  .top__header--attractions {
+    display: none;
+  }
+
+  .top__header--mode__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .top__header--account__icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 16px;
+  }
+
+  .top__header--menu__icon {
+    display: flex;
+    width: 32px;
+    height: 24px;
+    margin-left: 16px;
+  }
+
+  .top__title {
+    font-size: 40px;
+    margin: 52px 0 31px;
+  }
+
+  .top__search {
+    background-color: var(--accent-yellow);
+    border: none;
+    border-radius: 0;
+    height: auto;
+    font-size: 17px;
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .top__search--destination__wrapper {
+    background-color: var(--general-white);
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 15px 0 15px;
+  }
+
+  .top__search--destination__search-icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin-left: 12px;
+  }
+
+  .top__search--destination__label {
+    color: var(--text-color);
+    padding: 0 0 0 8px;
+    position: static;
+    font-weight: 500;
+  }
+
+  .top__search--destination {
+    display: none;
+  }
+
+  .top__search--date__wrapper {
+    position: relative;
+    border: none;
+    border-radius: 0;
+    flex: 1;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .top__search--date__label--desktop {
+    display: none;
+  }
+
+  .top__search--date__label {
+    display: flex;
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+
+  .top__search--date {
+    flex: 1;
+    background-color: var(--general-white);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px 0 6px 8px;
+  }
+
+  .top__search--date:last-child {
+    margin-left: 8px;
+  }
+
+  .top__search--date__wrapper span {
+    display: none;
+  }
+
+  .top__search--date__input {
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .top__search--amount__wrapper {
+    width: 100%;
+    flex: 1;
+    position: static;
+    background-color: var(--general-white);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 6px 0 6px;
+  }
+
+  .top__search--amount {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    border-right: 1px solid var(--secondary-text);
+    padding-left: 8px;
+  }
+
+  .top__search--amount:last-child {
+    border-right: none;
+  }
+
+  .top__search--amount__wrapper span {
+    display: none;
+  }
+
+  .top__search--amount--input {
+    font-weight: 500;
+    font-size: 17px;
+    text-align: left;
+  }
+
+  .top__search--amount__label {
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+
+  .top__search--button {
+    font-size: 22px;
+    border-radius: 4px;
+    padding: 14px 0;
+    width: 100%;
+    flex: 1;
+  }
+
+  .top__apps {
+    margin-top: 32px;
+  }
+}
