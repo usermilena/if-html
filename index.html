@@ -122,11 +122,11 @@
       </symbol>
     </svg>
     <div class="top">
-      <div class="top__header">
+      <div class="top__header col-lg-12 col-sm-6">
         <svg class="top__header--logo">
           <use href="./images/sprite.svg#logo" />
         </svg>
-        <div class="top__header--menu">
+        <div class="top__header--wrapper__menu">
           <span class="top__header--stays">Stays</span>
           <span class="top__header--attractions">Attractions</span>
           <svg class="top__header--mode">
@@ -135,16 +135,22 @@
           <svg class="top__header--account">
             <use href="./images/sprite.svg#account" />
           </svg>
+          <svg class="top__header--menu">
+            <use href="./images/sprite.svg#menu" />
+          </svg>
         </div>
       </div>
-      <div class="top__container">
+      <div class="top__container col-lg-12 col-sm-6">
         <h1 class="top__title">
           Discover stays <br />
           to live, work or just relax
         </h1>
       </div>
-      <form class="top__search">
+      <form class="top__search col-lg-12 col-sm-6">
         <div class="top__search--wrapper__destination">
+          <svg class="top__header--search">
+            <use href="./images/sprite.svg#search" />
+          </svg>
           <label for="destination" class="top__search--label__destination"
             >Your destination or hotel name</label
           >
@@ -155,19 +161,79 @@
           />
         </div>
         <div class="top__search--wrapper__date">
-          <label for="date" class="top__search--label__date"
-            >Check-in — Check-out</label
+          <label for="check-in" class="top__search--label__date"
+            >Check-in<span> — </span>Check-out</label
           >
-          <input
-            id="date"
-            class="top__search--date"
-            placeholder="Tue 15 Sept — Sat 19 Sept"
-          />
+          <div class="top__search--input__date">
+            <div class="top__search--item__date">
+              <label for="check-in" class="top__search--label__date--mobile"
+                >Check-in date</label
+              >
+              <input
+                id="check-in"
+                class="top__search--date"
+                placeholder="Tue 15 Sept"
+              />
+            </div>
+            <span> — </span>
+            <div class="top__search--item__date">
+              <label for="check-out" class="top__search--label__date--mobile"
+                >Check-out date</label
+              >
+              <input
+                id="check-out"
+                class="top__search--date"
+                placeholder="Sat 19 Sept"
+              />
+            </div>
+          </div>
         </div>
-        <input
-          class="top__search--amount"
-          placeholder="2 Adults — 0 Children — 1 Room"
-        />
+        <div class="top__search--wrapper__amount">
+          <div class="top__search--item__amount">
+            <input
+              class="top__search--amount"
+              min="0"
+              max="99"
+              step="1"
+              type="number"
+              id="adults"
+              placeholder="2"
+            />
+            <label class="top__search--label__amount" for="adults"
+              >Adults&nbsp;</label
+            >
+          </div>
+          <span>—</span>
+          <div class="top__search--item__amount">
+            <input
+              class="top__search--amount"
+              min="0"
+              max="99"
+              step="1"
+              type="number"
+              id="children"
+              placeholder="0"
+            />
+            <label class="top__search--label__amount" for="children"
+              >Children&nbsp;</label
+            >
+          </div>
+          <span>—</span>
+          <div class="top__search--item__amount">
+            <input
+              class="top__search--amount"
+              min="0"
+              max="99"
+              step="1"
+              type="number"
+              id="room"
+              placeholder="1"
+            />
+            <label class="top__search--label__amount" for="room"
+              >Room&nbsp;</label
+            >
+          </div>
+        </div>
         <button class="top__search--button" type="submit">Search</button>
       </form>
       <div class="top__footer">
@@ -182,25 +248,25 @@
     <div class="advantages">
       <h2 class="advantages__title">What do we offer</h2>
       <div class="advantages__list">
-        <div class="advantages__item col-3">
+        <div class="advantages__item col-lg-3 col-sm-4">
           <svg class="advantages__item--svg">
             <use href="./images/sprite.svg#headset" />
           </svg>
           <span class="advantages__item--caption">Support 24/7</span>
         </div>
-        <div class="advantages__item col-3">
+        <div class="advantages__item col-lg-3 col-sm-4">
           <svg class="advantages__item--svg">
             <use href="./images/sprite.svg#forum" />
           </svg>
           <span class="advantages__item--caption">Communicate directly</span>
         </div>
-        <div class="advantages__item col-3">
+        <div class="advantages__item col-lg-3 col-sm-4">
           <svg class="advantages__item--svg">
             <use href="./images/sprite.svg#devices" />
           </svg>
           <span class="advantages__item--caption">Book online</span>
         </div>
-        <div class="advantages__item col-3">
+        <div class="advantages__item col-lg-3 col-sm-4">
           <svg class="advantages__item--svg">
             <use href="./images/sprite.svg#like" />
           </svg>
@@ -211,20 +277,15 @@
     <div class="homes">
       <h2 class="homes__title">Homes guests loves</h2>
       <div class="homes__list">
-        <div class="homes__item col-3">
-          <img
-            class="homes__item--img"
-            src="images/images/hotel-leopold.png"
-            alt="Hotel Leopold"
-          />
+        <div class="homes__item col-lg-3 col-sm-3">
+          <img src="images/images/hotel-leopold.png" alt="Hotel Leopold" />
           <span class="homes__hotel">Hotel Leopold</span>
           <span class="homes__hotel homes__hotel--location">
             Saint Petersburg, Russia
           </span>
         </div>
-        <div class="homes__item col-3">
+        <div class="homes__item col-lg-3 col-sm-3">
           <img
-            class="homes__item--img"
             src="images/images/apartment-sunshine.png"
             alt="Apartment Sunshine"
           />
@@ -233,20 +294,15 @@
             Santa Cruz de Tenerife, Spain
           </span>
         </div>
-        <div class="homes__item homes__item--hidden col-3">
-          <img
-            class="homes__item--img"
-            src="images/images/villa-kunerad.png"
-            alt="Villa Kunerad"
-          />
+        <div class="homes__item homes__item--hidden col-lg-3 col-sm-3">
+          <img src="images/images/villa-kunerad.png" alt="Villa Kunerad" />
           <span class="homes__hotel">Villa Kunerad</span>
           <span class="homes__hotel homes__hotel--location">
             Vysokie Tatry, Slowakia
           </span>
         </div>
-        <div class="homes__item homes__item--hidden col-3">
+        <div class="homes__item homes__item--hidden col-lg-3 col-sm-3">
           <img
-            class="homes__item--img"
             src="images/images/hostel-friendship.png"
             alt="Hostel Friendship"
           />
