@@ -112,7 +112,7 @@
   height: 40px;
 }
 
-.top__header--wrapper__menu {
+.top__header--menu__wrapper {
   display: flex;
   align-items: center;
 }
@@ -120,22 +120,36 @@
 .top__header--stays {
   font-size: 24px;
   color: var(--general-white);
+  position: relative;
 }
 
-.top__header--stays:after {
+.top__header--stays:hover:after {
   content: "";
   background-color: var(--accent-yellow);
   width: 50px;
   height: 4px;
-  display: block;
-  margin: 12px 0 0 5px;
   position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .top__header--attractions {
   font-size: 24px;
   color: var(--general-white);
   margin-left: 24px;
+  position: relative;
+}
+
+.top__header--attractions:hover:after {
+  content: "";
+  background-color: var(--accent-yellow);
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .top__header--mode {
@@ -154,7 +168,7 @@
   display: none;
 }
 
-.top__container {
+.top__main--container {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -178,22 +192,20 @@
   height: 64px;
   font-size: 18px;
   align-items: center;
-  margin: 0 auto;
 }
 
-.top__search--wrapper__destination {
+.top__search--destination__wrapper {
   position: relative;
   width: 38%;
 }
 
-.top__header--search {
+.top__search--destination__search-icon {
   display: none;
 }
 
-.top__search--label__destination {
+.top__search--destination__label {
   color: var(--general-white);
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 0 24px;
   position: absolute;
   top: -66px;
 }
@@ -206,11 +218,11 @@
   width: 100%;
 }
 
-::placeholder {
+.top__search ::placeholder {
   color: var(--text-color);
 }
 
-.top__search--wrapper__date {
+.top__search--date__wrapper {
   position: relative;
   width: 21%;
   border: 3px solid var(--accent-yellow);
@@ -220,44 +232,35 @@
   align-items: center;
 }
 
-.top__search--label__date {
+.top__search--date__label--desktop {
   color: var(--general-white);
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 0 24px;
   position: absolute;
   top: -46px;
 }
 
-.top__search--label__date span {
-  color: var(--general-white);
+.top__search--date__label {
+  display: none;
 }
 
-.top__search--input__date {
-  display: flex;
-}
-
-.top__search--date {
+.top__search--date__input {
   outline: none;
   width: 100%;
 }
 
-.top__search--label__date--mobile {
-  display: none;
-}
-
-.top__search--wrapper__amount {
+.top__search--amount__wrapper {
   width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.top__search--item__amount {
+.top__search--amount {
   display: flex;
   align-items: center;
 }
 
-.top__search--amount {
+.top__search--amount--input {
   outline: none;
   width: 100%;
 }
@@ -303,13 +306,13 @@ input[type="number"] {
 /*ADVANTAGES*/
 
 .advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .advantages__title {
   font-weight: 500;
   font-size: 40px;
+  position: relative;
 }
 
 .advantages__title:after {
@@ -317,8 +320,10 @@ input[type="number"] {
   background-color: var(--accent-yellow);
   width: 100px;
   height: 4px;
-  display: block;
-  margin: 20px auto 0;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .advantages__list {
@@ -334,11 +339,10 @@ input[type="number"] {
   flex-direction: column;
 }
 
-.advantages__item--svg {
+.advantages__item--icon {
   height: 100px;
   width: 100px;
-  margin-top: 80px;
-  margin-bottom: 50px;
+  margin: 80px 0 50px;
 }
 
 .advantages__item--caption {
@@ -349,8 +353,7 @@ input[type="number"] {
 
 .homes {
   background-color: var(--bg-color);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .homes__title {
@@ -360,26 +363,55 @@ input[type="number"] {
 
 .homes__list {
   display: flex;
-  justify-content: center;
-  margin-top: 105px;
+  margin: 105px auto 0;
   gap: 16px;
+  position: relative;
 }
 
 .homes__item {
   display: flex;
   flex-direction: column;
+  font-size: 24px;
+  line-height: 1.17em;
+  flex: 1;
+}
+
+.homes__item > img {
+  width: 100%;
 }
 
 .homes__hotel {
-  font-size: 24px;
   color: var(--accent-blue);
-  text-align: left;
   margin-top: 28px;
+  text-align: left;
+  width: 100%;
 }
 
 .homes__hotel--location {
   color: var(--secondary-text);
-  line-height: 1.17em;
+  margin-top: 28px;
+  text-align: left;
+  width: 100%;
+}
+
+.homes__circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--stroke-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  right: -20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.homes__arrow {
+  height: 19px;
+  width: 7px;
+  fill: var(--stroke-color);
 }
 
 /*FOOTER*/
@@ -512,7 +544,7 @@ input[type="number"] {
     flex-direction: column;
   }
 
-  .top__search--wrapper__destination {
+  .top__search--destination__wrapper {
     background-color: var(--general-white);
     flex: 1;
     width: 95%;
@@ -523,17 +555,16 @@ input[type="number"] {
     padding: 15px 0 15px;
   }
 
-  .top__header--search {
+  .top__search--destination__search-icon {
     display: flex;
     width: 16px;
     height: 16px;
     margin-left: 12px;
   }
 
-  .top__search--label__destination {
+  .top__search--destination__label {
     color: var(--text-color);
-    padding-left: 8px;
-    padding-right: 0;
+    padding: 0 0 0 8px;
     position: static;
     font-weight: 500;
   }
@@ -542,7 +573,7 @@ input[type="number"] {
     display: none;
   }
 
-  .top__search--wrapper__date {
+  .top__search--date__wrapper {
     position: relative;
     border: none;
     border-radius: 0;
@@ -551,26 +582,18 @@ input[type="number"] {
     margin: 4px 8px;
   }
 
-  .top__search--label__date {
+  .top__search--date__label--desktop {
     display: none;
   }
 
-  .top__search--label__date--mobile {
+  .top__search--date__label {
     display: flex;
     font-size: 12px;
     line-height: 1.17em;
     padding-bottom: 4px;
   }
 
-  .top__search--label__date span {
-    display: none;
-  }
-
-  .top__search--input__date {
-    flex: 1;
-  }
-
-  .top__search--item__date {
+  .top__search--date {
     flex: 1;
     background-color: var(--general-white);
     border-radius: 4px;
@@ -580,21 +603,21 @@ input[type="number"] {
     padding: 6px 0 6px 8px;
   }
 
-  .top__search--item__date:last-child {
+  .top__search--date:last-child {
     margin-left: 8px;
   }
 
-  .top__search--input__date span {
+  .top__search--date__wrapper span {
     display: none;
   }
 
-  .top__search--date {
+  .top__search--date__input {
     font-weight: 500;
     text-align: left;
     line-height: 1.17em;
   }
 
-  .top__search--wrapper__amount {
+  .top__search--amount__wrapper {
     width: 95%;
     flex: 1;
     position: static;
@@ -604,7 +627,7 @@ input[type="number"] {
     padding: 6px 0 6px;
   }
 
-  .top__search--item__amount {
+  .top__search--amount {
     width: 100%;
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -612,22 +635,22 @@ input[type="number"] {
     padding-left: 8px;
   }
 
-  .top__search--item__amount:last-child {
+  .top__search--amount:last-child {
     border-right: none;
   }
 
-  .top__search--wrapper__amount span {
+  .top__search--amount__wrapper span {
     display: none;
   }
 
-  .top__search--amount {
+  .top__search--amount--input {
     text-align: left;
     font-weight: 500;
     font-size: 15px;
     line-height: 1.17em;
   }
 
-  .top__search--label__amount {
+  .top__search--amount__label {
     font-size: 12px;
     line-height: 1.17em;
     padding-bottom: 4px;
@@ -665,11 +688,10 @@ input[type="number"] {
     gap: 32px;
   }
 
-  .advantages__item--svg {
+  .advantages__item--icon {
     height: 70px;
     width: 70px;
-    margin-top: 0;
-    margin-bottom: 16px;
+    margin: 0 0 16px;
   }
 
   .advantages__item--caption {
@@ -688,10 +710,19 @@ input[type="number"] {
 
   .homes__list {
     margin-top: 32px;
+    overflow: hidden;
+  }
+
+  .homes__item {
+    font-size: 12px;
+  }
+
+  .homes__item > img {
+    width: 156px;
+    height: 156px;
   }
 
   .homes__hotel {
-    font-size: 12px;
     margin-top: 8px;
   }
 
@@ -699,8 +730,14 @@ input[type="number"] {
     margin-top: 4px;
   }
 
-  .homes__item--hidden {
-    display: none;
+  .homes__circle {
+    width: 28px;
+    height: 28px;
+  }
+
+  .homes__arrow {
+    height: 13px;
+    width: 5px;
   }
 
   /*FOOTER*/
@@ -791,7 +828,7 @@ input[type="number"] {
     flex-direction: column;
   }
 
-  .top__search--wrapper__destination {
+  .top__search--destination__wrapper {
     background-color: var(--general-white);
     flex: 1;
     width: 95%;
@@ -802,17 +839,16 @@ input[type="number"] {
     padding: 15px 0 15px;
   }
 
-  .top__header--search {
+  .top__search--destination__search-icon {
     display: flex;
     width: 16px;
     height: 16px;
     margin-left: 12px;
   }
 
-  .top__search--label__destination {
+  .top__search--destination__label {
     color: var(--text-color);
-    padding-left: 8px;
-    padding-right: 0;
+    padding: 0 0 0 8px;
     position: static;
     font-weight: 500;
   }
@@ -821,7 +857,7 @@ input[type="number"] {
     display: none;
   }
 
-  .top__search--wrapper__date {
+  .top__search--date__wrapper {
     position: relative;
     border: none;
     border-radius: 0;
@@ -830,26 +866,18 @@ input[type="number"] {
     margin: 4px 8px;
   }
 
-  .top__search--label__date {
+  .top__search--date__label--desktop {
     display: none;
   }
 
-  .top__search--label__date--mobile {
+  .top__search--date__label {
     display: flex;
     font-size: 14px;
     line-height: 1.17em;
     padding-bottom: 4px;
   }
 
-  .top__search--label__date span {
-    display: none;
-  }
-
-  .top__search--input__date {
-    flex: 1;
-  }
-
-  .top__search--item__date {
+  .top__search--date {
     flex: 1;
     background-color: var(--general-white);
     border-radius: 4px;
@@ -859,21 +887,21 @@ input[type="number"] {
     padding: 6px 0 6px 8px;
   }
 
-  .top__search--item__date:last-child {
+  .top__search--date:last-child {
     margin-left: 8px;
   }
 
-  .top__search--input__date span {
+  .top__search--date__wrapper span {
     display: none;
   }
 
-  .top__search--date {
+  .top__search--date__input {
     font-weight: 500;
     text-align: left;
     line-height: 1.17em;
   }
 
-  .top__search--wrapper__amount {
+  .top__search--amount__wrapper {
     width: 95%;
     flex: 1;
     position: static;
@@ -883,7 +911,7 @@ input[type="number"] {
     padding: 6px 0 6px;
   }
 
-  .top__search--item__amount {
+  .top__search--amount {
     width: 100%;
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -891,22 +919,22 @@ input[type="number"] {
     padding-left: 8px;
   }
 
-  .top__search--item__amount:last-child {
+  .top__search--amount:last-child {
     border-right: none;
   }
 
-  .top__search--wrapper__amount span {
+  .top__search--amount__wrapper span {
     display: none;
   }
 
-  .top__search--amount {
+  .top__search--amount--input {
     text-align: left;
     font-weight: 500;
     font-size: 17px;
     line-height: 1.17em;
   }
 
-  .top__search--label__amount {
+  .top__search--amount__label {
     font-size: 14px;
     line-height: 1.17em;
     padding-bottom: 4px;
@@ -928,8 +956,7 @@ input[type="number"] {
   /*ADVANTAGES*/
 
   .advantages {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
   }
 
   .advantages__list {
@@ -940,19 +967,19 @@ input[type="number"] {
     width: 35%;
   }
 
-  .advantages__item--svg {
-    margin-top: 50px;
-    margin-bottom: 30px;
+  .advantages__item--icon {
+    margin: 50px 0 30px;
   }
 
   /*HOMES*/
 
-  .homes__item {
-    width: 35%;
+  .homes__list {
+    overflow: hidden;
   }
 
-  .homes__item--hidden {
-    display: none;
+  .homes__item > img {
+    width: 240px;
+    height: 240px;
   }
 
   /*FOOTER*/

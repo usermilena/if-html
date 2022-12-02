@@ -73,7 +73,7 @@
             y2="25.492"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00A0FF" />
+            <stop offset="0" stop-color="#00A0FF" />
             <stop offset=".007" stop-color="#00A1FF" />
             <stop offset=".26" stop-color="#00BEFF" />
             <stop offset=".512" stop-color="#00D2FF" />
@@ -88,7 +88,7 @@
             y2="20.001"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFE000" />
+            <stop offset="0" stop-color="#FFE000" />
             <stop offset=".409" stop-color="#FFBD00" />
             <stop offset=".775" stop-color="orange" />
             <stop offset="1" stop-color="#FF9C00" />
@@ -101,7 +101,7 @@
             y2="45.054"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF3A44" />
+            <stop offset="0" stop-color="#FF3A44" />
             <stop offset="1" stop-color="#C31162" />
           </linearGradient>
           <linearGradient
@@ -112,7 +112,7 @@
             y2="10.339"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#32A071" />
+            <stop offset="0" stop-color="#32A071" />
             <stop offset=".069" stop-color="#2DA771" />
             <stop offset=".476" stop-color="#15CF74" />
             <stop offset=".801" stop-color="#06E775" />
@@ -126,7 +126,7 @@
         <svg class="top__header--logo">
           <use href="./images/sprite.svg#logo" />
         </svg>
-        <div class="top__header--wrapper__menu">
+        <div class="top__header--menu__wrapper">
           <span class="top__header--stays">Stays</span>
           <span class="top__header--attractions">Attractions</span>
           <svg class="top__header--mode">
@@ -140,102 +140,100 @@
           </svg>
         </div>
       </div>
-      <div class="top__container col-lg-12 col-sm-6">
+      <div class="top__main--container col-lg-12 col-sm-6">
         <h1 class="top__title">
           Discover stays <br />
           to live, work or just relax
         </h1>
-      </div>
-      <form class="top__search col-lg-12 col-sm-6">
-        <div class="top__search--wrapper__destination">
-          <svg class="top__header--search">
-            <use href="./images/sprite.svg#search" />
-          </svg>
-          <label for="destination" class="top__search--label__destination"
-            >Your destination or hotel name</label
-          >
-          <input
-            id="destination"
-            class="top__search--destination"
-            placeholder="New York"
-          />
-        </div>
-        <div class="top__search--wrapper__date">
-          <label for="check-in" class="top__search--label__date"
-            >Check-in<span> — </span>Check-out</label
-          >
-          <div class="top__search--input__date">
-            <div class="top__search--item__date">
-              <label for="check-in" class="top__search--label__date--mobile"
+        <form class="top__search">
+          <div class="top__search--destination__wrapper">
+            <svg class="top__search--destination__search-icon">
+              <use href="./images/sprite.svg#search" />
+            </svg>
+            <label for="destination" class="top__search--destination__label"
+              >Your destination or hotel name</label
+            >
+            <input
+              id="destination"
+              class="top__search--destination"
+              placeholder="New York"
+            />
+          </div>
+          <div class="top__search--date__wrapper">
+            <div class="top__search--date">
+              <label for="check-in" class="top__search--date__label--desktop"
+                >Check-in — Check-out</label
+              >
+              <label for="check-in" class="top__search--date__label"
                 >Check-in date</label
               >
               <input
                 id="check-in"
-                class="top__search--date"
+                class="top__search--date__input"
                 placeholder="Tue 15 Sept"
               />
             </div>
             <span> — </span>
-            <div class="top__search--item__date">
-              <label for="check-out" class="top__search--label__date--mobile"
+            <div class="top__search--date">
+              <label for="check-out" class="top__search--date__label"
                 >Check-out date</label
               >
               <input
                 id="check-out"
-                class="top__search--date"
+                class="top__search--date__input"
                 placeholder="Sat 19 Sept"
               />
             </div>
           </div>
-        </div>
-        <div class="top__search--wrapper__amount">
-          <div class="top__search--item__amount">
-            <input
-              class="top__search--amount"
-              min="0"
-              max="99"
-              step="1"
-              type="number"
-              id="adults"
-              placeholder="2"
-            />
-            <label class="top__search--label__amount" for="adults"
-              >Adults&nbsp;</label
-            >
+          <div class="top__search--amount__wrapper">
+            <div class="top__search--amount">
+              <input
+                class="top__search--amount--input"
+                min="0"
+                max="99"
+                step="1"
+                type="number"
+                id="adults"
+                placeholder="2"
+              />
+              <label class="top__search--amount__label" for="adults"
+                >Adults&nbsp;</label
+              >
+            </div>
+            <span>—</span>
+            <div class="top__search--amount">
+              <input
+                class="top__search--amount--input"
+                min="0"
+                max="99"
+                step="1"
+                type="number"
+                id="children"
+                placeholder="0"
+              />
+              <label class="top__search--amount__label" for="children"
+                >Children&nbsp;</label
+              >
+            </div>
+            <span>—</span>
+            <div class="top__search--amount">
+              <input
+                class="top__search--amount--input"
+                min="0"
+                max="99"
+                step="1"
+                type="number"
+                id="room"
+                placeholder="1"
+              />
+              <label class="top__search--amount__label" for="room"
+                >Room&nbsp;</label
+              >
+            </div>
           </div>
-          <span>—</span>
-          <div class="top__search--item__amount">
-            <input
-              class="top__search--amount"
-              min="0"
-              max="99"
-              step="1"
-              type="number"
-              id="children"
-              placeholder="0"
-            />
-            <label class="top__search--label__amount" for="children"
-              >Children&nbsp;</label
-            >
-          </div>
-          <span>—</span>
-          <div class="top__search--item__amount">
-            <input
-              class="top__search--amount"
-              min="0"
-              max="99"
-              step="1"
-              type="number"
-              id="room"
-              placeholder="1"
-            />
-            <label class="top__search--label__amount" for="room"
-              >Room&nbsp;</label
-            >
-          </div>
-        </div>
-        <button class="top__search--button" type="submit">Search</button>
-      </form>
+          <button class="top__search--button" type="submit">Search</button>
+        </form>
+      </div>
       <div class="top__footer">
         <svg class="top__footer--google-play">
           <use href="#google-play" />
@@ -249,25 +247,25 @@
       <h2 class="advantages__title">What do we offer</h2>
       <div class="advantages__list">
         <div class="advantages__item col-lg-3 col-sm-4">
-          <svg class="advantages__item--svg">
+          <svg class="advantages__item--icon">
             <use href="./images/sprite.svg#headset" />
           </svg>
           <span class="advantages__item--caption">Support 24/7</span>
         </div>
         <div class="advantages__item col-lg-3 col-sm-4">
-          <svg class="advantages__item--svg">
+          <svg class="advantages__item--icon">
             <use href="./images/sprite.svg#forum" />
           </svg>
           <span class="advantages__item--caption">Communicate directly</span>
         </div>
         <div class="advantages__item col-lg-3 col-sm-4">
-          <svg class="advantages__item--svg">
+          <svg class="advantages__item--icon">
             <use href="./images/sprite.svg#devices" />
           </svg>
           <span class="advantages__item--caption">Book online</span>
         </div>
         <div class="advantages__item col-lg-3 col-sm-4">
-          <svg class="advantages__item--svg">
+          <svg class="advantages__item--icon">
             <use href="./images/sprite.svg#like" />
           </svg>
           <span class="advantages__item--caption">Real guest reviews</span>
@@ -276,40 +274,39 @@
     </div>
     <div class="homes">
       <h2 class="homes__title">Homes guests loves</h2>
-      <div class="homes__list">
-        <div class="homes__item col-lg-3 col-sm-3">
+      <div class="homes__list col-lg-12 col-sm-6">
+        <div class="homes__item">
           <img src="images/images/hotel-leopold.png" alt="Hotel Leopold" />
           <span class="homes__hotel">Hotel Leopold</span>
-          <span class="homes__hotel homes__hotel--location">
-            Saint Petersburg, Russia
-          </span>
+          <span class="homes__hotel--location"> Saint Petersburg, Russia </span>
         </div>
-        <div class="homes__item col-lg-3 col-sm-3">
+        <div class="homes__item">
           <img
             src="images/images/apartment-sunshine.png"
             alt="Apartment Sunshine"
           />
           <span class="homes__hotel">Apartment Sunshine</span>
-          <span class="homes__hotel homes__hotel--location">
+          <span class="homes__hotel--location">
             Santa Cruz de Tenerife, Spain
           </span>
         </div>
-        <div class="homes__item homes__item--hidden col-lg-3 col-sm-3">
+        <div class="homes__item">
           <img src="images/images/villa-kunerad.png" alt="Villa Kunerad" />
           <span class="homes__hotel">Villa Kunerad</span>
-          <span class="homes__hotel homes__hotel--location">
-            Vysokie Tatry, Slowakia
-          </span>
+          <span class="homes__hotel--location"> Vysokie Tatry, Slowakia </span>
         </div>
-        <div class="homes__item homes__item--hidden col-lg-3 col-sm-3">
+        <div class="homes__item">
           <img
             src="images/images/hostel-friendship.png"
             alt="Hostel Friendship"
           />
           <span class="homes__hotel">Hostel Friendship</span>
-          <span class="homes__hotel homes__hotel--location"
-            >Berlin, Germany</span
-          >
+          <span class="homes__hotel--location">Berlin, Germany</span>
+        </div>
+        <div class="homes__circle">
+          <svg class="homes__arrow">
+            <use href="./images/sprite.svg#arrow" />
+          </svg>
         </div>
       </div>
     </div>
