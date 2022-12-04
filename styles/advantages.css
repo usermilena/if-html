@@ -28,6 +28,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
+  margin: 0 28px;
 }
 
 .advantages__item {
@@ -39,7 +40,7 @@
 .advantages__item--icon {
   height: 100px;
   width: 100px;
-  margin: 110px 0 50px;
+  margin: 103px 0 50px;
 }
 
 .advantages__item--caption {

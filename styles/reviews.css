@@ -8,7 +8,7 @@
   font-weight: 500;
   font-size: 40px;
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 114px;
   cursor: default;
 }
 
@@ -261,5 +261,25 @@
   .reviews__list--button {
     right: -20px;
     top: 255px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  /*REVIEWS FOR TABLETS SM*/
+
+  .reviews {
+    padding: 50px 90px 20px;
+  }
+
+  .reviews__title {
+    padding: 0 0 50px;
+  }
+
+  .reviews__item--img {
+    height: 450px;
+  }
+
+  .reviews__item--caption {
+    min-height: 290px;
   }
 }

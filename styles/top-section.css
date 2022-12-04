@@ -44,7 +44,7 @@
   position: absolute;
   bottom: -12px;
   left: calc(50% - 50px / 2);
-  animation: jello-horizontal 0.5s linear both 0.5s;
+  animation: jello-horizontal 0.5s linear both;
 }
 
 @keyframes jello-horizontal {
@@ -118,7 +118,7 @@
   font-size: 50px;
   font-weight: 500;
   color: var(--general-white);
-  margin: 205px 0 145px;
+  margin: 200px 0 145px;
   line-height: 1.18em;
   cursor: default;
 }
@@ -157,6 +157,10 @@
   width: 100%;
 }
 
+.top__search--destination__mobile {
+  display: none;
+}
+
 .top__search ::placeholder {
   color: var(--text-color);
 }
@@ -173,7 +177,7 @@
 
 .top__search--date__label--desktop {
   color: var(--general-white);
-  padding: 0 24px;
+  padding: 0 20px;
   position: absolute;
   top: -46px;
 }
@@ -311,14 +315,19 @@
   }
 
   .top__search--destination__label {
-    color: var(--text-color);
-    padding: 0 0 0 8px;
-    position: static;
-    font-weight: 500;
+    display: none;
   }
 
   .top__search--destination {
     display: none;
+  }
+
+  .top__search--destination__mobile {
+    display: flex;
+    padding: 0 0 0 8px;
+    font-weight: 500;
+    outline: none;
+    width: 100%;
   }
 
   .top__search--date__wrapper {
@@ -486,14 +495,19 @@
   }
 
   .top__search--destination__label {
-    color: var(--text-color);
-    padding: 0 0 0 8px;
-    position: static;
-    font-weight: 500;
+    display: none;
   }
 
   .top__search--destination {
     display: none;
+  }
+
+  .top__search--destination__mobile {
+    display: flex;
+    padding: 0 0 0 8px;
+    font-weight: 500;
+    outline: none;
+    width: 100%;
   }
 
   .top__search--date__wrapper {
