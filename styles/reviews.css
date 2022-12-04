@@ -1,0 +1,285 @@
+/*REVIEWS FOR DESKTOPS*/
+
+.reviews {
+  padding: 120px 0;
+}
+
+.reviews__title {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 114px;
+  cursor: default;
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  gap: 16px;
+  position: relative;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__item--img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  cursor: pointer;
+}
+
+.reviews__item--price {
+  width: 100%;
+  color: var(--general-white);
+  background: rgba(56, 56, 56, 0.7);
+  padding: 16px 0 11px 24px;
+  position: absolute;
+  bottom: 0;
+}
+
+.reviews__item--price > span {
+  font-weight: 500;
+  color: var(--general-white);
+}
+
+.reviews__item--caption {
+  background-color: var(--bg-color);
+  padding: 24px;
+  min-height: 360px;
+}
+
+.reviews__item--caption__hotel-score--wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__item--caption__hotel {
+  font-weight: 500;
+  color: var(--accent-blue);
+  cursor: pointer;
+}
+
+.reviews__item--caption__location {
+  font-weight: 400;
+  color: var(--accent-blue);
+  padding: 16px 0 30px;
+  cursor: pointer;
+}
+
+.reviews__item--caption__score--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.reviews__item--caption__score {
+  font-weight: 600;
+  color: var(--general-white);
+  padding: 4px 11px;
+  background-color: var(--general-blue);
+  border-radius: 8px;
+  width: 48px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.reviews__item--caption__reviews-amount {
+  font-size: 14px;
+  color: var(--secondary-text);
+  cursor: pointer;
+  text-align: end;
+}
+
+.reviews__item--caption__user--wrapper {
+  display: flex;
+}
+
+.reviews__item--caption__user-avatar {
+  width: 53px;
+  height: 53px;
+}
+
+.reviews__item--caption__user-name--wrapper {
+  padding-left: 20px;
+  cursor: default;
+}
+
+.reviews__item--caption__user-country {
+  color: var(--secondary-text);
+  padding-top: 8px;
+}
+
+.reviews__item--caption__user-review {
+  padding-top: 24px;
+  cursor: default;
+}
+
+.reviews__list--button {
+  width: 40px;
+  height: 40px;
+  background-color: var(--stroke-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  position: absolute;
+  right: 4.5%;
+  top: 180px;
+}
+
+.reviews_arrow {
+  height: 19px;
+  width: 7px;
+  fill: var(--stroke-color);
+}
+
+@media (max-width: 768px) {
+  /*REVIEWS FOR MOBILES*/
+
+  .reviews {
+    padding: 0;
+    background-color: var(--bg-color);
+  }
+
+  .reviews__title {
+    font-size: 28px;
+    padding: 40px 0 32px;
+  }
+
+  .reviews__list {
+    font-size: 15px;
+    gap: 0;
+  }
+
+  .reviews__item {
+    padding: 0 16px;
+  }
+
+  .reviews__item:nth-child(n + 2) {
+    display: none;
+  }
+
+  .reviews__item--img {
+    height: 325px;
+  }
+
+  .reviews__item--price {
+    display: none;
+  }
+
+  .reviews__item--caption {
+    padding: 12px 0;
+    min-height: 302px;
+  }
+
+  .reviews__item--caption__location {
+    padding: 8px 0 16px;
+  }
+
+  .reviews__item--caption__score {
+    padding: 3px 9px;
+    width: 39px;
+    margin-bottom: 5px;
+  }
+
+  .reviews__item--caption__reviews-amount {
+    font-size: 12px;
+  }
+
+  .reviews__item--caption__user-avatar {
+    width: 44px;
+    height: 44px;
+  }
+
+  .reviews__item--caption__user-name--wrapper {
+    padding-left: 13px;
+  }
+
+  .reviews__item--caption__user-country {
+    padding-top: 4px;
+  }
+
+  .reviews__list--button {
+    display: none;
+  }
+
+  .reviews__navigation {
+    display: flex;
+    gap: 8px;
+    margin-top: -40px;
+  }
+
+  .reviews__navigation--dot:first-child {
+    background-color: var(--text-color);
+  }
+
+  .reviews__navigation--dot {
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*REVIEWS FOR TABLETS*/
+
+  .reviews {
+    padding: 60px 120px;
+    background-color: var(--bg-color);
+  }
+
+  .reviews__title {
+    padding-bottom: 50px;
+  }
+
+  .reviews__item {
+    width: 100%;
+  }
+
+  .reviews__item:nth-child(n + 2) {
+    display: none;
+  }
+
+  .reviews__item--img {
+    height: 550px;
+  }
+
+  .reviews__item--caption {
+    min-height: 220px;
+  }
+
+  .reviews__list--button {
+    right: -20px;
+    top: 255px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  /*REVIEWS FOR TABLETS SM*/
+
+  .reviews {
+    padding: 50px 90px 20px;
+  }
+
+  .reviews__title {
+    padding: 0 0 50px;
+  }
+
+  .reviews__item--img {
+    height: 450px;
+  }
+
+  .reviews__item--caption {
+    min-height: 290px;
+  }
+}

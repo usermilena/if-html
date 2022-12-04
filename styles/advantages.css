@@ -1,0 +1,100 @@
+/*ADVANTAGES FOR DESKTOPS*/
+
+.advantages {
+  padding: 120px 0;
+}
+
+.advantages__title {
+  font-weight: 500;
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.advantages__title:after {
+  content: "";
+  background-color: var(--accent-yellow);
+  width: 100px;
+  height: 4px;
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0 28px;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.advantages__item--icon {
+  height: 100px;
+  width: 100px;
+  margin: 103px 0 50px;
+}
+
+.advantages__item--caption {
+  font-size: 24px;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  /*ADVANTAGES FOR MOBILES*/
+
+  .advantages {
+    padding: 24px 16px 40px;
+  }
+
+  .advantages__title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .advantages__title:after {
+    display: none;
+  }
+
+  .advantages__list {
+    gap: 32px;
+  }
+
+  .advantages__item--icon {
+    height: 70px;
+    width: 70px;
+    margin: 0 0 16px;
+  }
+
+  .advantages__item--caption {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*ADVANTAGES FOR TABLETS*/
+
+  .advantages {
+    padding: 60px 0;
+  }
+
+  .advantages__list {
+    gap: 0;
+  }
+
+  .advantages__item {
+    width: 35%;
+  }
+
+  .advantages__item--icon {
+    margin: 50px 0 30px;
+  }
+}

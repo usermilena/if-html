@@ -1,0 +1,225 @@
+/*SIGN UP FOR DESKTOPS*/
+
+.sign-up__reviews--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up {
+  background-color: var(--bg-color);
+  margin: 0 104px;
+  position: relative;
+}
+
+.sign-up__wrapper {
+  padding: 52px 64px 52px 24px;
+  display: flex;
+  align-items: center;
+}
+
+.sign-up__user-icon--wrapper {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--general-white);
+}
+
+.sign-up__logo--wrapper {
+  display: none;
+}
+
+.sign-up__title--wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+}
+
+.sign-up__user-icon {
+  width: 50px;
+  height: 44px;
+}
+
+.sign-up__title {
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 20px;
+  cursor: default;
+}
+
+.sign-up__button {
+  font-size: 18px;
+  color: var(--accent-blue);
+  background-color: var(--general-white);
+  border: 1px solid var(--accent-blue);
+  border-radius: 8px;
+  padding: 12px 32px;
+  cursor: pointer;
+  width: 128px;
+}
+
+.sign-up__button--install {
+  display: none;
+}
+
+.sign-up__close {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.sign-up__close:hover {
+  filter: brightness(0.5);
+}
+
+@media (max-width: 768px) {
+  /*SIGN UP FOR MOBILES*/
+
+  .sign-up__reviews--wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sign-up {
+    background-color: var(--general-white);
+    margin: 0 auto;
+  }
+
+  .sign-up__wrapper {
+    padding: 24px 16px 24px 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  .sign-up__user-icon--wrapper {
+    display: none;
+  }
+
+  .sign-up__logo--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    background-color: var(--accent-blue);
+    border-radius: 4px;
+  }
+
+  .sign-up__logo {
+    width: 53px;
+    height: 11px;
+    fill: var(--general-white);
+    padding: 0 3px;
+  }
+
+  .sign-up__title--wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 16px;
+  }
+
+  .sign-up__title {
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 0;
+  }
+
+  .sign-up__button {
+    display: none;
+  }
+
+  .sign-up__button--install {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--accent-blue);
+    background-color: var(--general-white);
+    padding-left: 16px;
+  }
+
+  .sign-up__close {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: calc(50% - 16px / 2);
+    left: 16px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*SIGN UP FOR TABLETS*/
+
+  .sign-up {
+    background-color: var(--general-white);
+    margin: 0 auto;
+  }
+
+  .sign-up__wrapper {
+    padding: 24px 32px 64px;
+    display: flex;
+    align-items: center;
+  }
+
+  .sign-up__user-icon--wrapper {
+    display: none;
+  }
+
+  .sign-up__logo--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background-color: var(--accent-blue);
+    border-radius: 4px;
+  }
+
+  .sign-up__logo {
+    width: 108px;
+    height: 24px;
+    fill: var(--general-white);
+    padding: 0 5px;
+  }
+
+  .sign-up__title--wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 16px;
+  }
+
+  .sign-up__title {
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 0;
+  }
+
+  .sign-up__button {
+    display: none;
+  }
+
+  .sign-up__button--install {
+    display: flex;
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--accent-blue);
+    background-color: var(--general-white);
+    padding-left: 16px;
+  }
+
+  .sign-up__close {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: calc(50% - 16px / 2);
+    left: 0;
+    cursor: pointer;
+  }
+}
