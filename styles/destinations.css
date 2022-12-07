@@ -66,12 +66,10 @@
 
 .destinations__tab:nth-child(2) > .destinations__tab--label {
   margin-left: 294px;
-  padding: 17px 68px;
 }
 
 .destinations__tab:last-child > .destinations__tab--label {
-  margin-left: 490px;
-  padding: 17px 24px;
+  margin-left: 458px;
 }
 
 .destinations__tab--content,
@@ -173,7 +171,7 @@
     + .destinations__tab--label
     + .destinations__tab--content {
     flex-wrap: nowrap;
-    padding: 56px 16px 0;
+    padding: 56px 0 0;
   }
 
   .destinations__tab--label {
@@ -228,6 +226,16 @@
     z-index: 1;
   }
 
+  .destinations__tab--input:checked
+    + .destinations__tab--label
+    + .destinations__tab--content {
+    margin: 0 16px;
+  }
+
+  .destinations__circle:focus + .destinations__tab--content__regions {
+    display: none;
+  }
+
   .destinations_arrow {
     height: 13px;
     width: 5px;
@@ -257,9 +265,21 @@
     display: none;
   }
 
+  .destinations__tab:first-child > .destinations__tab--label {
+    margin-left: 62px;
+  }
+
+  .destinations__tab:nth-child(2) > .destinations__tab--label {
+    margin-left: 252px;
+  }
+
+  .destinations__tab:last-child > .destinations__tab--label {
+    margin-left: 416px;
+  }
+
   .destinations__circle {
     bottom: 45%;
-    right: 20px;
+    right: 40px;
     box-shadow: -4px 0 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-90deg);
     z-index: 1;
@@ -267,13 +287,5 @@
 
   .destinations__circle:focus + .destinations__tab--content__regions {
     display: none;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 768px) {
-  /*DESTINATIONS FOR TABLETS SM*/
-
-  .destinations__content--img {
-    height: 300px;
   }
 }
