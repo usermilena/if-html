@@ -46,6 +46,7 @@
   padding-top: 130px;
   transition: all 0.35s;
   gap: 16px;
+  margin: 0 31px;
 }
 
 .destinations__tab--label {
@@ -65,10 +66,12 @@
 
 .destinations__tab:nth-child(2) > .destinations__tab--label {
   margin-left: 294px;
+  padding: 17px 68px;
 }
 
 .destinations__tab:last-child > .destinations__tab--label {
-  margin-left: 458px;
+  margin-left: 490px;
+  padding: 17px 24px;
 }
 
 .destinations__tab--content,
@@ -140,6 +143,7 @@
   justify-content: center;
   transition: all 0.35s;
   gap: 16px;
+  margin: 0 31px;
 }
 
 .destinations_arrow {
@@ -263,5 +267,13 @@
 
   .destinations__circle:focus + .destinations__tab--content__regions {
     display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  /*DESTINATIONS FOR TABLETS SM*/
+
+  .destinations__content--img {
+    height: 300px;
   }
 }
