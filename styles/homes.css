@@ -33,14 +33,14 @@
 
 .homes__hotel {
   color: var(--accent-blue);
-  margin-top: 28px;
+  margin-top: 24px;
   width: 100%;
   cursor: pointer;
 }
 
 .homes__hotel--location {
   color: var(--secondary-text);
-  margin-top: 28px;
+  margin-top: 24px;
   width: 100%;
   cursor: pointer;
 }
