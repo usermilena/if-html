@@ -1,4 +1,4 @@
-/*HOMES FOR DESKTOPS*/
+/* HOMES FOR DESKTOPS */
 
 .homes {
   background-color: var(--bg-color);
@@ -56,7 +56,7 @@
   position: absolute;
   top: 30%;
   right: -20px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
   cursor: pointer;
 }
 
@@ -67,7 +67,7 @@
 }
 
 @media (max-width: 768px) {
-  /*HOMES FOR MOBILES*/
+  /* HOMES FOR MOBILES */
 
   .homes {
     padding: 40px 16px 56px;
@@ -114,7 +114,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*HOMES FOR TABLETS*/
+  /* HOMES FOR TABLETS */
 
   .homes {
     padding: 60px 0;

@@ -1,0 +1,24 @@
+mixin homes
+  section.homes
+    h2.homes__title Homes guests loves
+    ul.homes__list.col-lg-12.col-sm-6
+      li.homes__item
+        img(src=require('../../assets/images/homes/hotel-leopold.png'), alt='Hotel Leopold')
+        span.homes__hotel Hotel Leopold
+        span.homes__hotel--location Saint Petersburg, Russia
+      li.homes__item
+        img(src=require('../../assets/images/homes/apartment-sunshine.png'), alt='Apartment Sunshine')
+        span.homes__hotel Apartment Sunshine
+        span.homes__hotel--location
+          | Santa Cruz de Tenerife, Spain
+      li.homes__item
+        img(src=require('../../assets/images/homes/villa-kunerad.png'), alt='Villa Kunerad')
+        span.homes__hotel Villa Kunerad
+        span.homes__hotel--location Vysokie Tatry, Slowakia
+      li.homes__item
+        img(src=require('../../assets/images/homes/hostel-friendship.png'), alt='Hostel Friendship')
+        span.homes__hotel Hostel Friendship
+        span.homes__hotel--location Berlin, Germany
+      li.homes__circle
+        svg.homes__arrow
+          use(href='#arrow')

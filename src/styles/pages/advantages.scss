@@ -1,4 +1,4 @@
-/*ADVANTAGES FOR DESKTOPS*/
+/* ADVANTAGES FOR DESKTOPS */
 
 .advantages {
   padding: 120px 0;
@@ -12,8 +12,8 @@
   cursor: default;
 }
 
-.advantages__title:after {
-  content: "";
+.advantages__title::after {
+  content: '';
   background-color: var(--accent-yellow);
   width: 100px;
   height: 4px;
@@ -49,7 +49,7 @@
 }
 
 @media (max-width: 768px) {
-  /*ADVANTAGES FOR MOBILES*/
+  /* ADVANTAGES FOR MOBILES */
 
   .advantages {
     padding: 24px 16px 40px;
@@ -60,7 +60,7 @@
     margin-bottom: 32px;
   }
 
-  .advantages__title:after {
+  .advantages__title::after {
     display: none;
   }
 
@@ -80,7 +80,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*ADVANTAGES FOR TABLETS*/
+  /* ADVANTAGES FOR TABLETS */
 
   .advantages {
     padding: 60px 0;
