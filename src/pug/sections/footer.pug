@@ -1,25 +1,26 @@
-mixin footer
-  footer.footer
-    svg.footer__logo
-      use(href='#logo')
-    .footer__container
-      .footer__menu
-        .footer__column
-          a.footer__title(href='#') About
-          a.footer__item(href='#') How Triphouse works
-          a.footer__item(href='#') Careers
-          a.footer__item(href='#') Privacy
-          a.footer__item(href='#') Terms
-        .footer__column
-          a.footer__title(href='#') Property types
-          a.footer__item(href='#') Guest houses
-          a.footer__item(href='#') Hotels
-          a.footer__item(href='#') Apartments
-          a.footer__item(href='#') Villas
-          a.footer__item(href='#') Holiday homes
-          a.footer__item(href='#') Hostels
-        .footer__column
-          a.footer__title(href='#') Support
-          a.footer__item(href='#') Contact Customer Service
-          a.footer__item(href='#') FAQ
-      span.footer__rights &copy; 2022 Triphouse, Inc. All rights reserved
+footer.footer
+  svg.footer__logo
+    use(href='#logo')
+  .footer__container
+    .footer__menu
+      .footer__column
+        mixin menu-item(className,name)
+          a(class=className)(href='#')= name
+        +menu-item('footer__title','About')
+        +menu-item('footer__item','How Triphouse works')
+        +menu-item('footer__item','Careers')
+        +menu-item('footer__item','Privacy')
+        +menu-item('footer__item','Terms')
+      .footer__column
+        +menu-item('footer__title','Property types')
+        +menu-item('footer__item','Guest houses')
+        +menu-item('footer__item','Hotels')
+        +menu-item('footer__item','Apartments')
+        +menu-item('footer__item','Villas')
+        +menu-item('footer__item','Holiday homes')
+        +menu-item('footer__item','Hostels')
+      .footer__column
+        +menu-item('footer__title','Support')
+        +menu-item('footer__item','Contact Customer Service')
+        +menu-item('footer__item','FAQ')
+    span.footer__rights &copy; 2022 Triphouse, Inc. All rights reserved

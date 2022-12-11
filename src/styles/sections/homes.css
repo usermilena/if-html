@@ -5,13 +5,6 @@
   padding: 120px 0;
 }
 
-.homes__title {
-  font-weight: 500;
-  font-size: 40px;
-  text-align: center;
-  cursor: default;
-}
-
 .homes__list {
   display: flex;
   margin: 105px auto 0;
@@ -71,10 +64,6 @@
 
   .homes {
     padding: 40px 16px 56px;
-  }
-
-  .homes__title {
-    font-size: 28px;
   }
 
   .homes__list {

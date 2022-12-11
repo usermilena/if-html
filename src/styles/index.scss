@@ -1,13 +1,13 @@
-@import './fonts';
+@import 'fonts';
 
-@import './global';
+@import 'global.css';
 
-@import './bg-images';
+@import 'bg-images.css';
 
-@import './pages/top-section';
-@import './pages/advantages';
-@import './pages/homes';
-@import './pages/destinations';
-@import './pages/sign-up';
-@import './pages/reviews';
-@import './pages/footer';
+@import 'sections/top-section.css';
+@import 'sections/advantages.css';
+@import 'sections/homes.css';
+@import 'sections/destinations.css';
+@import 'sections/sign-up.css';
+@import 'sections/reviews.css';
+@import 'sections/footer.css';

@@ -4,15 +4,11 @@
   padding: 120px 0;
 }
 
-.advantages__title {
-  font-weight: 500;
-  font-size: 40px;
+.advantages > h2 {
   position: relative;
-  text-align: center;
-  cursor: default;
 }
 
-.advantages__title::after {
+.advantages > h2::after {
   content: '';
   background-color: var(--accent-yellow);
   width: 100px;
@@ -55,12 +51,11 @@
     padding: 24px 16px 40px;
   }
 
-  .advantages__title {
-    font-size: 28px;
+  .advantages > h2 {
     margin-bottom: 32px;
   }
 
-  .advantages__title::after {
+  .advantages > h2::after {
     display: none;
   }
 

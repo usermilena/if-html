@@ -1,23 +1,12 @@
-mixin advantages
-  section.advantages
-    h2.advantages__title What do we offer
-    .advantages__list
+section.advantages
+  +title('What do we offer')
+  .advantages__list
+    mixin item-img-cap(href, name)
       figure.advantages__item.col-lg-3.col-sm-4
         svg.advantages__item--icon
-          use(href='#headset')
-        figcaption.advantages__item--caption
-          | Support 24/7
-      figure.advantages__item.col-lg-3.col-sm-4
-        svg.advantages__item--icon
-          use(href='#forum')
-        figcaption.advantages__item--caption
-          | Communicate directly
-      figure.advantages__item.col-lg-3.col-sm-4
-        svg.advantages__item--icon
-          use(href='#devices')
-        figcaption.advantages__item--caption Book online
-      figure.advantages__item.col-lg-3.col-sm-4
-        svg.advantages__item--icon
-          use(href='#like')
-        figcaption.advantages__item--caption
-          | Real guest reviews
+          use(href=href)
+        figcaption.advantages__item--caption= name
+    +item-img-cap('#headset', 'Communicate directly')
+    +item-img-cap('#forum', 'Support 24/7')
+    +item-img-cap('#devices', 'Book online')
+    +item-img-cap('#like', 'Real guest reviews')

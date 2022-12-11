@@ -4,12 +4,8 @@
   padding: 120px 0;
 }
 
-.reviews__title {
-  font-weight: 500;
-  font-size: 40px;
-  text-align: center;
+.reviews > h2 {
   padding-bottom: 114px;
-  cursor: default;
 }
 
 .reviews__list {
@@ -132,11 +128,11 @@
   box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
   cursor: pointer;
   position: absolute;
-  right: 4.5%;
+  right: 5.5%;
   top: 180px;
 }
 
-.reviews_arrow {
+.reviews__arrow {
   height: 19px;
   width: 7px;
   fill: var(--stroke-color);
@@ -150,8 +146,7 @@
     background-color: var(--bg-color);
   }
 
-  .reviews__title {
-    font-size: 28px;
+  .reviews > h2 {
     padding: 40px 0 32px;
   }
 
@@ -238,7 +233,7 @@
     background-color: var(--bg-color);
   }
 
-  .reviews__title {
+  .reviews > h2 {
     padding-bottom: 50px;
   }
 
@@ -271,7 +266,7 @@
     padding: 50px 90px 20px;
   }
 
-  .reviews__title {
+  .reviews > h2 {
     padding: 0 0 50px;
   }
 

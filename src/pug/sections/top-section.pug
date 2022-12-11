@@ -1,58 +1,38 @@
-mixin top
-  section.top
-    header.top__header.col-lg-12.col-sm-6
-      svg.top__header--logo
-        use(href='#logo')
-      nav.top__header--menu__wrapper
-        ul.top__header--menu
-          li.top__header--stays Stays
-          li.top__header--attractions Attractions
-          li
-            svg.top__header--mode__icon
-              use(href='#mode')
-          li
-            svg.top__header--account__icon
-              use(href='#account')
-          li
-            svg.top__header--menu__icon
-              use(href='#menu')
-    main.top__main--container.col-lg-12.col-sm-6
-      h1.top__title
-        | Discover stays
-        br
-        |
-        | to live, work or just relax
-      form.top__search
-        .top__search--destination__wrapper
-          svg.top__search--destination__search-icon
-            use(href='#search')
-          label.top__search--destination__label(for='destination') Your destination or hotel name
-          input#destination.top__search--destination(placeholder='New York')
-          input.top__search--destination__mobile(placeholder='Your destination or hotel name')
-        .top__search--date__wrapper
-          .top__search--date
-            label.top__search--date__label--desktop(for='check-in') Check-in &mdash; Check-out
-            label.top__search--date__label(for='check-in') Check-in date
-            input#check-in.top__search--date__input(placeholder='Tue 15 Sept')
-          span &mdash;
-          .top__search--date
-            label.top__search--date__label(for='check-out') Check-out date
-            input#check-out.top__search--date__input(placeholder='Sat 19 Sept')
-        .top__search--amount__wrapper
+section.top
+  include ../components/header
+  main.top__main--container.col-lg-12.col-sm-6
+    h1.top__title
+      | Discover stays
+      br
+      |
+      | to live, work or just relax
+    form.top__search
+      .top__search--destination__wrapper
+        svg.top__search--destination__search-icon
+          use(href='#search')
+        label.top__search--destination__label(for='destination') Your destination or hotel name
+        input#destination.top__search--destination(placeholder='New York')
+        input.top__search--destination__mobile(placeholder='Your destination or hotel name')
+      .top__search--date__wrapper
+        .top__search--date
+          label.top__search--date__label--desktop(for='check-in') Check-in &mdash; Check-out
+          label.top__search--date__label(for='check-in') Check-in date
+          input#check-in.top__search--date__input(placeholder='Tue 15 Sept')
+        span &mdash;
+        .top__search--date
+          label.top__search--date__label(for='check-out') Check-out date
+          input#check-out.top__search--date__input(placeholder='Sat 19 Sept')
+      .top__search--amount__wrapper
+        mixin input-amount(id, name)
           .top__search--amount
-            input#adults.top__search--amount--input(min='0', max='99', step='1', type='number', placeholder='2')
-            label.top__search--amount__label(for='adults') Adults&nbsp;
-          span &mdash;
-          .top__search--amount
-            input#children.top__search--amount--input(min='0', max='99', step='1', type='number', placeholder='0')
-            label.top__search--amount__label(for='children') Children&nbsp;
-          span &mdash;
-          .top__search--amount
-            input#room.top__search--amount--input(min='0', max='99', step='1', type='number', placeholder='1')
-            label.top__search--amount__label(for='room') Room&nbsp;
-        button.top__search--button(type='submit') Search
-    .top__apps
-      svg.top__apps--google-play
-        use(href='#google-play')
-      svg.top__apps--app-store
-        use(href='#app-store')
+            input(id=id).top__search--amount--input(min='0', max='99', step='1', type='number', placeholder=name)
+            label.top__search--amount__label(for=id)= id
+        +input-amount('Adults', '2')
+        span &nbsp;
+        span &mdash;
+        +input-amount('Children', '0')
+        span &nbsp;
+        span &mdash;
+        +input-amount('Room', '1')
+      button.top__search--button(type='submit') Search
+  include ../components/apps

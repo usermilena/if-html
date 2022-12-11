@@ -4,12 +4,8 @@
   padding: 120px 0;
 }
 
-.destinations__title {
-  font-weight: 500;
-  font-size: 40px;
-  text-align: center;
+.destinations > h2 {
   padding-bottom: 100px;
-  cursor: default;
 }
 
 .destinations__tabs {
@@ -142,7 +138,7 @@
   margin: 0 31px;
 }
 
-.destinations_arrow {
+.destinations__arrow {
   height: 19px;
   width: 7px;
   fill: var(--stroke-color);
@@ -156,8 +152,7 @@
     padding: 40px 0;
   }
 
-  .destinations__title {
-    font-size: 28px;
+  .destinations > h2 {
     padding-bottom: 32px;
   }
 
@@ -230,7 +225,7 @@
     display: none;
   }
 
-  .destinations_arrow {
+  .destinations__arrow {
     height: 13px;
     width: 5px;
   }
@@ -243,7 +238,7 @@
     padding: 60px 0 0;
   }
 
-  .destinations__title {
+  .destinations > h2 {
     padding-bottom: 50px;
   }
 
