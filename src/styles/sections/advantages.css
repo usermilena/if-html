@@ -1,19 +1,15 @@
-/*ADVANTAGES FOR DESKTOPS*/
+/* ADVANTAGES FOR DESKTOPS */
 
 .advantages {
   padding: 120px 0;
 }
 
-.advantages__title {
-  font-weight: 500;
-  font-size: 40px;
+.advantages > h2 {
   position: relative;
-  text-align: center;
-  cursor: default;
 }
 
-.advantages__title:after {
-  content: "";
+.advantages > h2::after {
+  content: '';
   background-color: var(--accent-yellow);
   width: 100px;
   height: 4px;
@@ -49,18 +45,17 @@
 }
 
 @media (max-width: 768px) {
-  /*ADVANTAGES FOR MOBILES*/
+  /* ADVANTAGES FOR MOBILES */
 
   .advantages {
     padding: 24px 16px 40px;
   }
 
-  .advantages__title {
-    font-size: 28px;
+  .advantages > h2 {
     margin-bottom: 32px;
   }
 
-  .advantages__title:after {
+  .advantages > h2::after {
     display: none;
   }
 
@@ -80,7 +75,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*ADVANTAGES FOR TABLETS*/
+  /* ADVANTAGES FOR TABLETS */
 
   .advantages {
     padding: 60px 0;

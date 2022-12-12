@@ -1,8 +1,5 @@
-@import url("./fonts.css");
-@import url("./bg-images.css");
-
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   color: var(--text-color);
   line-height: 1.17em;
@@ -31,15 +28,15 @@ ul {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
-  -moz-appearance: textfield;
+input[type='number'] {
+  appearance: textfield;
 }
 
-input[type="radio"] {
+input[type='radio'] {
   display: none;
 }
 
@@ -49,6 +46,13 @@ input + label {
 
 a {
   text-decoration: none;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  cursor: default;
 }
 
 :root {
@@ -124,6 +128,10 @@ a {
 
 @media (max-width: 768px) {
   /* FOR MOBILES: */
+
+  h2 {
+    font-size: 28px;
+  }
 
   .col-sm-1 {
     width: var(--col-sm);

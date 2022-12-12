@@ -1,4 +1,4 @@
-/*FOOTER FOR DESKTOPS*/
+/* FOOTER FOR DESKTOPS */
 
 .footer {
   background-color: var(--general-blue);
@@ -49,7 +49,7 @@
 }
 
 @media (max-width: 768px) {
-  /*FOOTER FOR MOBILES*/
+  /* FOOTER FOR MOBILES */
 
   .footer {
     padding: 40px 0;
@@ -82,7 +82,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*FOOTER FOR TABLETS*/
+  /* FOOTER FOR TABLETS */
 
   .footer {
     padding: 80px 0 50px;

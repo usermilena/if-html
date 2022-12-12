@@ -1,7 +1,7 @@
-/*TOP-SECTION FOR DESKTOPS*/
+/* TOP-SECTION FOR DESKTOPS */
 
 .top {
-  background-image: url("../images/images/top-section.png");
+  background-image: url('../../assets/images/top-section.png');
   background-position: top;
   padding: 51px 0 120px;
   background-repeat: no-repeat;
@@ -36,8 +36,8 @@
   cursor: pointer;
 }
 
-.top__header--stays:hover:after {
-  content: "";
+.top__header--stays:hover::after {
+  content: '';
   background-color: var(--accent-yellow);
   width: 50px;
   height: 4px;
@@ -51,21 +51,27 @@
   0% {
     transform: scale3d(1, 1, 1);
   }
+
   30% {
     transform: scale3d(1.25, 0.75, 1);
   }
+
   40% {
     transform: scale3d(0.75, 1.25, 1);
   }
+
   50% {
     transform: scale3d(1.15, 0.85, 1);
   }
+
   65% {
     transform: scale3d(0.95, 1.05, 1);
   }
+
   75% {
     transform: scale3d(1.05, 0.95, 1);
   }
+
   100% {
     transform: scale3d(1, 1, 1);
   }
@@ -79,8 +85,8 @@
   cursor: pointer;
 }
 
-.top__header--attractions:hover:after {
-  content: "";
+.top__header--attractions:hover::after {
+  content: '';
   background-color: var(--accent-yellow);
   width: 50px;
   height: 4px;
@@ -242,7 +248,7 @@
 }
 
 @media (max-width: 768px) {
-  /*TOP-SECTION FOR MOBILES*/
+  /* TOP-SECTION FOR MOBILES */
 
   .top {
     background-position: right;
@@ -304,7 +310,7 @@
     align-items: center;
     border-radius: 4px;
     margin-bottom: 8px;
-    padding: 15px 0 15px;
+    padding: 15px 0;
   }
 
   .top__search--destination__search-icon {
@@ -379,7 +385,7 @@
     background-color: var(--general-white);
     border-radius: 4px;
     margin-bottom: 8px;
-    padding: 6px 0 6px;
+    padding: 6px 0;
   }
 
   .top__search--amount {
@@ -423,7 +429,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*TOP-SECTION FOR TABLETS*/
+  /* TOP-SECTION FOR TABLETS */
 
   .top {
     background-position: right;
@@ -484,7 +490,7 @@
     align-items: center;
     border-radius: 4px;
     margin-bottom: 8px;
-    padding: 15px 0 15px;
+    padding: 15px 0;
   }
 
   .top__search--destination__search-icon {
@@ -559,7 +565,7 @@
     background-color: var(--general-white);
     border-radius: 4px;
     margin-bottom: 8px;
-    padding: 6px 0 6px;
+    padding: 6px 0;
   }
 
   .top__search--amount {

@@ -1,0 +1,17 @@
+include ../components/mixins
+
+section.homes
+  +title('Homes guests loves')
+  ul.homes__list.col-lg-12.col-sm-6
+    mixin item-img-2cap(src, alt, name)
+      li.homes__item
+        img(src=require(src), alt= alt)
+        span.homes__hotel=alt
+        span.homes__hotel--location=name
+    +item-img-2cap('../../assets/images/homes/hotel-leopold.png','Hotel Leopold','Saint Petersburg, Russia')
+    +item-img-2cap('../../assets/images/homes/apartment-sunshine.png','Apartment Sunshine','Santa Cruz de Tenerife, Spain')
+    +item-img-2cap('../../assets/images/homes/villa-kunerad.png','Villa Kunerad','Vysokie Tatry, Slowakia')
+    +item-img-2cap('../../assets/images/homes/hostel-friendship.png','Hostel Friendship','Berlin, Germany')
+    li.homes__circle
+      svg.homes__arrow
+        use(href='#arrow')

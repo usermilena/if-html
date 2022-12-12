@@ -1,0 +1,53 @@
+include ../components/mixins
+
+section.destinations
+  +title ('The best destinations')
+  .destinations__tabs
+    .destinations__tab
+      input#regions.destinations__tab--input(type='radio', name='tabs', checked='')
+      label.destinations__tab--label(for='regions') Regions
+      ul.destinations__tab--content
+        mixin tab-content-item(id,name)
+          li.col-lg-3.col-sm-3
+            div(id=id).destinations__content--img
+              button.destinations__content--button Book now
+            span.destinations__content--caption=name
+        +tab-content-item('maldives','Maldives')
+        +tab-content-item('spain','Spain')
+        +tab-content-item('norway','Norway')
+        +tab-content-item('island','Island')
+      button.destinations__circle(type='button')
+        svg.destinations__arrow
+          use(href='#arrow')
+      ul.destinations__tab--content__regions
+        +tab-content-item('japan','Japan')
+        +tab-content-item('france','France')
+        +tab-content-item('scottland','Scottland')
+        +tab-content-item('russia','Russia')
+    .destinations__tab
+      input#cities.destinations__tab--input(type='radio', name='tabs')
+      label.destinations__tab--label(for='cities') Cities
+      ul.destinations__tab--content
+        +tab-content-item('berlin','Berlin, Germany')
+        +tab-content-item('paris','Paris, France')
+        +tab-content-item('budapest','Budapest, Hungary')
+        +tab-content-item('london','London, United Kingdom')
+        +tab-content-item('barcelona','Barcelona, Spain')
+        +tab-content-item('tbilisi','Tbilisi, Georgia')
+        +tab-content-item('moscow','Moscow, Russia')
+        +tab-content-item('amsterdam','Amsterdam, Netherlands')
+    .destinations__tab
+      input#places.destinations__tab--input(type='radio', name='tabs')
+      label.destinations__tab--label(for='places')
+        | Places
+        |
+        span of interest
+      ul.destinations__tab--content
+        +tab-content-item('edinburgh','Edinburgh Castle, Edinburgh, United Kingdom')
+        +tab-content-item('neuschwanstein','Neuschwanstein, Fussen, Germany')
+        +tab-content-item('big-ben','Big Ben, London, United Kingdom')
+        +tab-content-item('colosseum','Colosseum, Roma, Italy')
+        +tab-content-item('matterhorn-zermatt','Matterhorn, Zermatt, Switzerland')
+        +tab-content-item('morskie-oko','Morskie Oko, Poland')
+        +tab-content-item('krka','Krka, Croatia')
+        +tab-content-item('cabo-da-roca-sintra','Cabo da roca, Sintra, Portugal')

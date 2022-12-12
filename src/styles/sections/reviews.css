@@ -1,15 +1,11 @@
-/*REVIEWS FOR DESKTOPS*/
+/* REVIEWS FOR DESKTOPS */
 
 .reviews {
   padding: 120px 0;
 }
 
-.reviews__title {
-  font-weight: 500;
-  font-size: 40px;
-  text-align: center;
+.reviews > h2 {
   padding-bottom: 114px;
-  cursor: default;
 }
 
 .reviews__list {
@@ -38,7 +34,7 @@
 .reviews__item--price {
   width: 100%;
   color: var(--general-white);
-  background: rgba(56, 56, 56, 0.7);
+  background: rgb(56 56 56 / 70%);
   padding: 16px 0 11px 24px;
   position: absolute;
   bottom: 0;
@@ -129,29 +125,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
   cursor: pointer;
   position: absolute;
-  right: 4.5%;
+  right: 5.5%;
   top: 180px;
 }
 
-.reviews_arrow {
+.reviews__arrow {
   height: 19px;
   width: 7px;
   fill: var(--stroke-color);
 }
 
 @media (max-width: 768px) {
-  /*REVIEWS FOR MOBILES*/
+  /* REVIEWS FOR MOBILES */
 
   .reviews {
     padding: 0;
     background-color: var(--bg-color);
   }
 
-  .reviews__title {
-    font-size: 28px;
+  .reviews > h2 {
     padding: 40px 0 32px;
   }
 
@@ -231,14 +226,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*REVIEWS FOR TABLETS*/
+  /* REVIEWS FOR TABLETS */
 
   .reviews {
     padding: 60px 120px;
     background-color: var(--bg-color);
   }
 
-  .reviews__title {
+  .reviews > h2 {
     padding-bottom: 50px;
   }
 
@@ -265,13 +260,13 @@
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  /*REVIEWS FOR TABLETS SM*/
+  /* REVIEWS FOR TABLETS SM */
 
   .reviews {
     padding: 50px 90px 20px;
   }
 
-  .reviews__title {
+  .reviews > h2 {
     padding: 0 0 50px;
   }
 

@@ -1,4 +1,4 @@
-/*SIGN UP FOR DESKTOPS*/
+/* SIGN UP FOR DESKTOPS */
 
 .sign-up__reviews--wrapper {
   display: flex;
@@ -78,7 +78,7 @@
 }
 
 @media (max-width: 768px) {
-  /*SIGN UP FOR MOBILES*/
+  /* SIGN UP FOR MOBILES */
 
   .sign-up__reviews--wrapper {
     display: flex;
@@ -154,7 +154,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*SIGN UP FOR TABLETS*/
+  /* SIGN UP FOR TABLETS */
 
   .sign-up {
     background-color: var(--general-white);

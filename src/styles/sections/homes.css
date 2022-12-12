@@ -1,15 +1,8 @@
-/*HOMES FOR DESKTOPS*/
+/* HOMES FOR DESKTOPS */
 
 .homes {
   background-color: var(--bg-color);
   padding: 120px 0;
-}
-
-.homes__title {
-  font-weight: 500;
-  font-size: 40px;
-  text-align: center;
-  cursor: default;
 }
 
 .homes__list {
@@ -56,7 +49,7 @@
   position: absolute;
   top: 30%;
   right: -20px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
   cursor: pointer;
 }
 
@@ -67,14 +60,10 @@
 }
 
 @media (max-width: 768px) {
-  /*HOMES FOR MOBILES*/
+  /* HOMES FOR MOBILES */
 
   .homes {
     padding: 40px 16px 56px;
-  }
-
-  .homes__title {
-    font-size: 28px;
   }
 
   .homes__list {
@@ -114,7 +103,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*HOMES FOR TABLETS*/
+  /* HOMES FOR TABLETS */
 
   .homes {
     padding: 60px 0;

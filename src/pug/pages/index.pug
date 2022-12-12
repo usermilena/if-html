@@ -1,0 +1,16 @@
+include ../components/page
+
+include ../sections/reviews
+
+- var pageInfo = { title: 'TripHouse' };
+
++page(pageInfo)
+  include ../components/sprite
+  include ../sections/top-section
+  include ../sections/advantages
+  include ../sections/homes
+  include ../sections/destinations
+  .sign-up__reviews--wrapper
+    include ../sections/sign-up
+    +reviews
+  include ../sections/footer
