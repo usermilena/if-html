@@ -1,5 +1,11 @@
 include ../components/mixins
 
+mixin tab-content-item(id,name)
+  li.col-lg-3.col-sm-3
+    div(id=id).destinations__content--img
+      button.destinations__content--button Book now
+    span.destinations__content--caption=name
+
 section.destinations
   +title ('The best destinations')
   .destinations__tabs
@@ -7,11 +13,6 @@ section.destinations
       input#regions.destinations__tab--input(type='radio', name='tabs', checked='')
       label.destinations__tab--label(for='regions') Regions
       ul.destinations__tab--content
-        mixin tab-content-item(id,name)
-          li.col-lg-3.col-sm-3
-            div(id=id).destinations__content--img
-              button.destinations__content--button Book now
-            span.destinations__content--caption=name
         +tab-content-item('maldives','Maldives')
         +tab-content-item('spain','Spain')
         +tab-content-item('norway','Norway')

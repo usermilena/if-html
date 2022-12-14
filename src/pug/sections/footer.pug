@@ -1,11 +1,12 @@
+mixin menu-item(className,name)
+  a(class=className)(href='#')= name
+
 footer.footer
   svg.footer__logo
     use(href='#logo')
   .footer__container
     .footer__menu
       .footer__column
-        mixin menu-item(className,name)
-          a(class=className)(href='#')= name
         +menu-item('footer__title','About')
         +menu-item('footer__item','How Triphouse works')
         +menu-item('footer__item','Careers')
