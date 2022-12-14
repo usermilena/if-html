@@ -1,3 +1,8 @@
+mixin input-amount(id, name)
+  .top__search--amount
+    input(id=id).top__search--amount--input(min='0', max='99', step='1', type='number', placeholder=name)
+    label.top__search--amount__label(for=id)= id
+
 section.top
   include ../components/header
   main.top__main--container.col-lg-12.col-sm-6
@@ -23,10 +28,6 @@ section.top
           label.top__search--date__label(for='check-out') Check-out date
           input#check-out.top__search--date__input(placeholder='Sat 19 Sept')
       .top__search--amount__wrapper
-        mixin input-amount(id, name)
-          .top__search--amount
-            input(id=id).top__search--amount--input(min='0', max='99', step='1', type='number', placeholder=name)
-            label.top__search--amount__label(for=id)= id
         +input-amount('Adults', '2')
         span &nbsp;
         span &mdash;
