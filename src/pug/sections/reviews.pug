@@ -23,19 +23,18 @@ mixin reviews-item(id, $price, $hotel, $location, $rating, $score, name, $countr
           .reviews__item--caption__user-country= $country
       .reviews__item--caption__user-review= $review
 
-mixin reviews
-  section.reviews
-    +title ('Guests reviews')
-    ul.reviews__list
-      +reviews-item('king-kong-hostel', '40 USD', 'King Kong Hostel', 'Rotterdam, Netherlands', '8,9', '2016 reviews', 'Adam Smith', '🇺🇦 Ukraine', "Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice. ")
-      +reviews-item('ubud-bali-resort-spa', '250 USD', 'Ubud Bali Resort&SPA', 'Bali, Indonesia', '9,4', '1324 reviews', 'Hanna Ivanova', '🇺🇸 USA', "I've been in this hostel for a month and here is the best hostel of all\n" +
-      "      Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent\n" +
-      "      Most importantly, those who work here are kind and good-natured.")
-      +reviews-item('rokoko-hotel', '100 USD', 'Rokoko Hotel', 'Ourika, Marocco', '9,1', '815 reviews', 'Anika Messer', '🇩🇪 Germany', "Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.")
-      li.reviews__list--button
-        svg.reviews__arrow
-          use(href='#arrow')
-      li.reviews__navigation
+section.reviews
+  +title ('Guests reviews')
+  ul.reviews__list
+    +reviews-item('king-kong-hostel', '40 USD', 'King Kong Hostel', 'Rotterdam, Netherlands', '8,9', '2016 reviews', 'Adam Smith', '🇺🇦 Ukraine', "Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice. ")
+    +reviews-item('ubud-bali-resort-spa', '250 USD', 'Ubud Bali Resort&SPA', 'Bali, Indonesia', '9,4', '1324 reviews', 'Hanna Ivanova', '🇺🇸 USA', "I've been in this hostel for a month and here is the best hostel of all\n" +
+    "      Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent\n" +
+    "      Most importantly, those who work here are kind and good-natured.")
+    +reviews-item('rokoko-hotel', '100 USD', 'Rokoko Hotel', 'Ourika, Marocco', '9,1', '815 reviews', 'Anika Messer', '🇩🇪 Germany', "Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.")
+    li.reviews__list--button
+      svg.reviews__arrow
+        use(href='#arrow')
+    li.reviews__navigation
         - for (var x = 0; x < 4; x++)
-          .reviews__navigation--dot
+        .reviews__navigation--dot
 
